@@ -1,0 +1,32 @@
+.section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding-top: 12vh;
+  
+    h4 {
+      font-family: "MoriLight";
+      font-size: 3.5vh;
+      letter-spacing: 0.1vh;
+      color: #0d0d0d;
+      padding-bottom: 9vh;
+      text-align: center;
+      @media only screen and (max-width: 750px) {
+        font-size: 2.5vh;
+        max-width: 65%;
+      }
+    }
+  
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: auto;
+      padding-bottom: 12vh;
+  
+    }
+  }
