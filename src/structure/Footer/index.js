@@ -56,7 +56,7 @@ export default function Footer() {
                 </motion.div>
               </Link>
             </div>
-            <div className={styles.col}>
+            {/* <div className={styles.col}>
               <Link href="/">
                 <motion.div className={styles.navitem} whileHover="hover">
                   <p>PROYECTOS</p>
@@ -75,7 +75,7 @@ export default function Footer() {
                   />
                 </motion.div>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.bottom}>
@@ -85,25 +85,25 @@ export default function Footer() {
 
       <div className={styles.rightcontainer}>
         <div className={styles.topright}>
-          <Link href="https://www.google.com/maps/place/25+de+Mayo+470,+E3269+Gualeguaych%C3%BA,+Entre+R%C3%ADos/@-33.009176,-58.5120881,17z/data=!3m1!4b1!4m6!3m5!1s0x95baa82b47b097f5:0x3e5fbce29bbffdfc!8m2!3d-33.0091805!4d-58.5095132!16s%2Fg%2F11snpydcpy?hl=es&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D">
+          <Link href="https://www.google.com.ar/maps/place/Magnasco+403+local+1,+E3269+Gualeguaych%C3%BA,+Entre+R%C3%ADos/@-33.0026557,-58.5208642,17z/data=!3m1!4b1!4m5!3m4!1s0x95b007867622e33d:0xadc412ee60a767d1!8m2!3d-33.0026602!4d-58.5182893?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D">
             <div className={styles.item}>
-              <h4>Ubicación</h4>
+              <h4>UBICACIÓN</h4>
 
               <p>Magnasco 403 – Local 1</p>
               <p>Gualeguaychú – Entre Ríos</p>
             </div>
           </Link>
 
-          <Link href="https://www.google.com/maps/place/Av.+Fondo+de+la+Legua+577,+B1609+Boulogne,+Provincia+de+Buenos+Aires/@-34.497962,-58.5475806,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb07b11988783:0x6e57d955a5efd2e7!8m2!3d-34.4979664!4d-58.5450057!16s%2Fg%2F11jtyjgk1q?hl=es&entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D">
+          <Link href="">
             <div className={styles.item}>
-              <h4>Contacto</h4>
+              <h4>CONTACTO</h4>
               <p>(+54) 9 3446 367103</p>
               <p> info@coenergysa.com.ar</p>
             </div>
           </Link>
   
             <div className={styles.item}>
-              <h4>Redes</h4>
+              <h4>REDES</h4>
               <p>Facebook</p>
               <p>Instagram</p>
             </div>

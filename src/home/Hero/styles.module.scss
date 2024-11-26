@@ -32,19 +32,21 @@
     height: 80vh;
     width: 95vw;
 
+
     .motionDiv {
       position: relative;
       height: 100%;
       width: 100%;
       display: flex;
       flex-direction: column;
+  
     }
   
 
   
     .topcontainer {
       width: 100%;
-      height: 30vh;
+      height: 40vh;
       // border-bottom: 1px solid white;
       display: flex;
       align-items: center;
@@ -61,11 +63,19 @@
       h1 {
         margin: 0;
         font-weight: 400;
-        font-family: "TalismanLight", sans-serif;
         line-height: 100%;
         width: 100vw;
         font-size: 18vh;
+        font-family: var(--font-montserrat), sans-serif; 
       }
+
+      p{
+        font-size: 4vh;
+        margin-left: 3vh;
+        font-family: var(--font-montserrat), sans-serif; 
+      }
+
+  
     }
   
     .bottomcontainer {
@@ -74,7 +84,18 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-  
+      margin-top:10vh;
+      .results{
+        font-size: 6vh;
+        font-weight: 300;
+        margin-left: 3vh;
+        font-family: var(--font-inter), sans-serif; 
+      }
+
+      .bottombuttons{
+        background-color: red;
+        margin-top: 4vh;
+      }
   }
 
 

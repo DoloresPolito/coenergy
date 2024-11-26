@@ -9,17 +9,19 @@ export default function AboutHome() {
         <div className={styles.container}>
           <div className={styles.left}>
             <h4>SOBRE NOSOTROS</h4>
-            <h6></h6>
+            <h6>Impulsando hogares y negocios con energía solar.</h6>
           </div>
 
-          <AnimatedDiv>
+
             <div className={styles.right}>
+            <AnimatedDiv>
               <p className={styles.p1}>
                 Desde Gualeguaychú, Entre Ríos, Argentina, hemos creado COENERGY
                 SA con el firme propósito de proveer todas las soluciones
                 posibles a clientes que estén tras objetivos como el ahorro y el
                 cuidado del medio ambiente.
               </p>
+              </AnimatedDiv>
 
               <p className={styles.p2}>
                 A partir de valores tales como la conservación de los recursos
@@ -32,7 +34,7 @@ export default function AboutHome() {
                 cliente.
               </p>
             </div>
-          </AnimatedDiv>
+
         </div>
       </div>
     </>

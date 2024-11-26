@@ -2,43 +2,64 @@
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: grey;
 
-  // margin-left: 1vw;
-  // margin-right: 1vw;
-  // margin-top: 10vh;
-
   .container {
     display: flex;
-    align-items: center;
-    height: 80vh;
-    width: 90vw;
+    flex-direction: row;
+    align-items: flex-start; // Alinear al inicio verticalmente
+    justify-content: space-between; // Separar los dos lados
+    height: 60vh;
+    width: 95%;
+    margin-top: 7vh;
+
+
+    .left, .right {
+      width: 48%; // Reducir un poco para evitar problemas de espacio acumulado
+      height: auto; // Ajustar a contenido
+      // min-height: 70vh; // Garantizar una altura mínima
+
+
+    }
 
     .left {
       display: flex;
       flex-direction: column;
-      width: 50%;
-      height: 70vh;
 
-      .p1 {
+
+      h4 {
         font-size: 2.5vh;
         margin-bottom: 5vh;
+        font-family: var(--font-montserrat), sans-serif; 
+        font-weight: 500;
+      }
+
+      h6 {
+        font-size: 4vh;
+        max-width: 60vh;
+        font-family: var(--font-inter), sans-serif; 
+        font-weight: 400;
       }
     }
 
     .right {
       display: flex;
       flex-direction: column;
-      width: 50%;
-      height: 70vh;
+      margin-top: 8vh;
 
-  
+      .p1{
 
+        font-size: 3vh;
+        font-family: var(--font-montserrat), sans-serif; 
+      }
+      
       .p2 {
-        font-size: 2vh;
+        font-size: 2.3vh;
+        margin-top: 4vh; // Eliminar márgenes adicionales
+        padding: 0; // Eliminar padding adicional
+        font-family: var(--font-montserrat), sans-serif; 
       }
     }
   }

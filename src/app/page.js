@@ -8,7 +8,7 @@ import WorkProgressV2 from "@/home/Why";
 import Footer from "@/structure/Footer";
 import LogosMoving from "@/home/LogosMoving";
 import AboutHome from "@/home/AboutHome";
-
+import Asesoramiento from "@/home/Asesoramiento";
 export default function Home() {
 
   useEffect(() => {
@@ -27,6 +27,7 @@ export default function Home() {
     <div className={styles.page}>
      <Carousel />
      <AboutHome/>
+     <Asesoramiento/>
      <WorkProgressV2/>
      <LogosMoving/>
      <Footer/>

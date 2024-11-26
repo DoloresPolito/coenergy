@@ -1,0 +1,81 @@
+.section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+margin: 0 auto;
+background-color: rgb(230, 229, 229);
+   
+  
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start; // Alinear al inicio verticalmente
+      justify-content: space-between; // Separar los dos lados
+    //   height: 60vh;
+      width: 95%;
+      margin-top: 2vh;
+
+      h4 {
+        font-size: 2.5vh;
+        margin-bottom: 5vh;
+        font-family: var(--font-montserrat), sans-serif; 
+        font-weight: 500;
+        margin-top: 5vh;
+  
+      }
+
+      h6 {
+        font-size: 4vh;
+        max-width: 60vh;
+        font-family: var(--font-inter), sans-serif; 
+        font-weight: 400;
+        margin-top: 2vh;
+
+        margin-bottom: 2vh;
+      }
+
+      p{
+        font-size: 2.3vh;
+        margin-top: 4vh; // Eliminar márgenes adicionales
+        padding: 0; // Eliminar padding adicional
+        font-family: var(--font-montserrat), sans-serif; 
+        margin-bottom: 15vh;
+        max-width: 70vw;
+      }
+
+      .left, .right {
+        width: 48%; // Reducir un poco para evitar problemas de espacio acumulado
+        height: auto; // Ajustar a contenido
+        // min-height: 70vh; // Garantizar una altura mínima
+  
+  
+      }
+  
+      .left {
+        display: flex;
+        flex-direction: column;
+    
+    
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+    .imagecontainer{
+        img{
+            height: auto;
+            width: 100%;
+        }
+    }
+    
+    }
+  
+  
+
+
+
+    }}  

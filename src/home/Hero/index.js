@@ -57,7 +57,7 @@ const Carousel = () => {
                 La energía del futuro, en tus manos hoy.
               </p>
 
-              <div className={styles.bottombuttons}>
+              {/* <div className={styles.bottombuttons}>
                 <motion.div
                   variants={slideUp2}
                   initial="initial"
@@ -67,7 +67,7 @@ const Carousel = () => {
                     <h6>Proyectos</h6>
                   </div>
                 </motion.div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </motion.div>
