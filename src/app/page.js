@@ -9,6 +9,7 @@ import Footer from "@/structure/Footer";
 import LogosMoving from "@/home/LogosMoving";
 import AboutHome from "@/home/AboutHome";
 import Asesoramiento from "@/home/Asesoramiento";
+import Services from "@/home/Services";
 export default function Home() {
 
   useEffect(() => {
@@ -28,6 +29,7 @@ export default function Home() {
      <Carousel />
      <AboutHome/>
      <Asesoramiento/>
+     <Services/>
      <WorkProgressV2/>
      <LogosMoving/>
      <Footer/>
