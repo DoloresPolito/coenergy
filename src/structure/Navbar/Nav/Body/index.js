@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import styles from "./style.module.scss";
 import { blur, translate } from "../../anim";
-import { Link } from "react-scroll";
-
+import Link from "next/link";
+import React from "react";
 export default function Body({
   links,
   selectedLink,
@@ -35,17 +35,10 @@ export default function Body({
   return (
     <div className={styles.body}>
       {links.map((link, index) => {
-        const { title, href } = link;
+        const { title, href, i } = link;
         return (
-          <Link
-          key={href}
-            to={href}
-            spy={true}
-            smooth={true}
-            offset={link.offset}
-            duration={800}
-            onClick={handleLinkClick}
-          >
+          <React.Fragment key={i}>
+          <Link href={href} onClick={handleLinkClick}>
             <motion.p
               onMouseOver={() => {
                 setSelectedLink({ isActive: true, index });
@@ -63,6 +56,7 @@ export default function Body({
               {getChars(title)}
             </motion.p>
           </Link>
+          </React.Fragment>
         );
       })}
     </div>

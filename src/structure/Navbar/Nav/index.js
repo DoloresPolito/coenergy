@@ -9,35 +9,26 @@ import Body from './Body';
 
 const links = [
   {
-    title: "Home",
-    href: "home",
-    src: "decimal.jpg",
-    offset:0
+    title: "INICIO",
+    href: "",
+
   },
+  // {
+  //   title: "NOSOTROS",
+  //   href: "nosotros",
+
+  // },
+  // {
+  //   title: "CONTACTO",
+  //   href: "contacto",
+
+  // },
   {
-    title: "About",
-    href: "description",
-    src: "background3.png",
-    offset:-150
+    title: "TIENDA",
+    href: "https://www.coenergy.ar/",
+
   },
-  {
-    title: "Work Progress",
-    href: "work",
-    src: "decimal.jpg",
-    offset:-60
-  },
-  {
-    title: "Projects",
-    href: "projects",
-    src: "background3.png",
-    offset:-350
-  },
-  {
-    title: "Contact",
-    href: "contact",
-    src: "decimal.jpg",
-    offset:-100
-  }
+
 ]
 
 export default function Index({setIsActive}) {

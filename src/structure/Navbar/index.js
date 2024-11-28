@@ -64,7 +64,7 @@ export default function Index() {
               Menu
             </motion.p>
             <motion.p variants={opacity} animate={isActive ? "open" : "closed"}>
-              Close
+            Cerrar
             </motion.p>
           </div>
         </div>
@@ -98,12 +98,12 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <motion.div
+      {/* <motion.div
         variants={background}
         initial="initial"
         animate={isActive ? "open" : "closed"}
         className={styles.background}
-      ></motion.div>
+      ></motion.div> */}
       <AnimatePresence mode="wait">
         {isActive && <Nav setIsActive={setIsActive} />}
       </AnimatePresence>
