@@ -30,17 +30,18 @@ export default function WorkProgressV2() {
     <>
       <div className={styles.section} id="work">
         <div className={styles.container}>
-        <div className={styles.left}>
-        <h4>BENEFICIOS</h4>
+          <div className={styles.left}>
+            <h4>BENEFICIOS</h4>
             <h6>Porque elegir energÍa solar?</h6>
-        </div>
+          </div>
 
-
-        <div className={styles.right}>
-        {items.map((item, i) => {
-          return <Item key={i} item={item} isLast={i === items.length - 1}/>;
-        })}
-        </div>
+          <div className={styles.right}>
+            {items.map((item, i) => {
+              return (
+                <Item key={i} item={item} isLast={i === items.length - 1} />
+              );
+            })}
+          </div>
         </div>
       </div>
     </>
@@ -50,22 +51,19 @@ export default function WorkProgressV2() {
 const Item = ({ item, isLast }) => {
   return (
     <>
-
-      <div className={`${styles.item} ${isLast ? styles.lastItem : ''}`}>
-        
+      <div className={`${styles.item} ${isLast ? styles.lastItem : ""}`}>
         <div className={styles.indexcontainer}>
           <h2>{item.index}</h2>
         </div>
         <div className={styles.titlecontainer}>
           <h4>{item.title}</h4>
         </div>
- 
+
         <div className={styles.textcontainer}>
-        <AnimatedDiv>
-          <p>{item.text}</p>
+          <AnimatedDiv>
+            <p>{item.text}</p>
           </AnimatedDiv>
         </div>
-    
       </div>
     </>
   );

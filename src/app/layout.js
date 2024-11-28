@@ -2,6 +2,7 @@ import { Montserrat, Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "../structure/Navbar";
+import Footer from "@/structure/Footer";
 
 // Fuentes locales
 const geistSans = localFont({
@@ -57,6 +58,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer/>
       </body>
     </html>
   );

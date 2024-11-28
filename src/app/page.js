@@ -5,7 +5,6 @@ import Lenis from "lenis";
 import styles from "./page.module.css";
 import Carousel from "@/home/Hero";
 import WorkProgressV2 from "@/home/Why";
-import Footer from "@/structure/Footer";
 import LogosMoving from "@/home/LogosMoving";
 import AboutHome from "@/home/AboutHome";
 import Asesoramiento from "@/home/Asesoramiento";
@@ -32,7 +31,7 @@ export default function Home() {
      <Services/>
      <WorkProgressV2/>
      <LogosMoving/>
-     <Footer/>
+
     </div>
   );
 }

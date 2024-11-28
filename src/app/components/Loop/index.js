@@ -5,11 +5,11 @@ import Image from "next/image";
 const Loop = ({ reverse }) => {
   const logos = [
     { src: "/logos/1.png", alt: "1" },
-    { src: "/logos/deye2.png", alt: "2" },
-    { src: "/logos/3.png", alt: "3" },
+    { src: "/logos/2...png", alt: "2" },
+    { src: "/logos/3..png", alt: "3" },
     { src: "/logos/4.png", alt: "4" },
     { src: "/logos/5.png", alt: "5" },
-    { src: "/logos/chiko2.png", alt: "6" },
+    { src: "/logos/1..png", alt: "6" },
     { src: "/logos/7.png", alt: "7" },
     { src: "/logos/8.png", alt: "8" },
    

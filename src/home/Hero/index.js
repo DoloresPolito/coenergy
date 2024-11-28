@@ -54,7 +54,9 @@ const Carousel = () => {
               className={styles.textcontainer}
             >
               <p className={styles.results}>
-                La energía del futuro, en tus manos hoy.
+                Innovamos y creamos <span>soluciones energéticas</span>{" "}
+                inteligentes cuidando el <span>medioambiente</span> en busca de
+                la mejor experiencia para <span>nuestros clientes.</span>
               </p>
 
               {/* <div className={styles.bottombuttons}>
