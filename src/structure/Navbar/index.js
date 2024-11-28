@@ -1,4 +1,5 @@
 "use client";
+import { usePathname } from "next/navigation"; 
 import styles from "./style.module.scss";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,7 +11,7 @@ import logo from "../../../public/logo/logosoloblanco.png"
 
 export default function Index() {
   const [isActive, setIsActive] = useState(false);
-
+  const pathname = usePathname(); 
   const navdesktop = [
     { id: "1.", title: "INICIO", url: "/", href: "/" },
     { id: "2.", title: "NOSOTROS", url: "/", href: "/nosotros" },
@@ -29,6 +30,8 @@ export default function Index() {
       },
     },
   };
+
+  const navColor = pathname === "/" ? "white" : "black";
 
   return (
     <div className={styles.header}>
@@ -72,20 +75,22 @@ export default function Index() {
               return (
                 <React.Fragment key={i}>
                   <Link href={link.href}>
-                    <motion.div className={styles.navitem} whileHover="hover">
+                    <motion.div className={styles.navitem} whileHover="hover" style={{color:navColor}}>
                       <p className="styled-paragraph">
                         <span className="highlighted">{link.id} </span>{" "}
                         {link.title}
                       </p>
                       <motion.div
+                          
                         className={styles.underline}
                         variants={underlineVariants}
+                        style={{ backgroundColor: navColor }} 
                       />
                     </motion.div>
                   </Link>
-                  <div>
+                  <div >
                     {" "}
-                    <p>/</p>
+                    <p style={{color:navColor}}>/</p>
                   </div>
                 </React.Fragment>
               );

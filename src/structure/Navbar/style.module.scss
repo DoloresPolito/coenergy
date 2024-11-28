@@ -52,23 +52,8 @@
     position: relative;
     margin: 0 auto;
     height: 3vh;
-    // background-color: blue;
 
-    //logo de vinte studio
-    h2 {
-      color: white;
-      font-size: 1.6vw;
-      font-family: "TalismanLight", sans-serif;
-
-      @media only screen and (max-width: 1000px) {
-        font-size: 2.5vw;
-      }
-
-      @media only screen and (max-width: 600px) {
-        font-size: 4vw;
-      }
-    }
-
+    
     //MENU
     p {
       margin: 0px;
@@ -85,26 +70,10 @@
     a {
       text-decoration: none;
       color: white;
-      // position: absolute;
-      // left: 0;
+
     }
 
-    // .hoverText {
-    //   position: relative;
-    //   display: inline-block;
-    //   cursor: pointer;
-    //   font-size: 1.5rem;
-    //   padding-bottom: 5px;
 
-    //   .underline {
-    //     position: absolute;
-    //     left: 0;
-    //     bottom: 0;
-    //     height: 2px;
-    //     background-color: #007bff; // Color del subrayado
-    //     width: 0; // Inicialmente oculta
-    //   }
-    // }
 
     .navcontainerdesktop {
       display: flex;
@@ -129,14 +98,13 @@
           left: 0;
           bottom: 0;
           height: 1px;
-          background-color: white; // Color del subrayado
+          // background-color: blue; 
           width: 0; // Inicialmente oculta
         }
 
         span {
           font-family: "OverusedGrotesk-Light", sans-serif;
           font-weight: 300;
-          // border-top: 1px solid var(--background);
           font-size: 1.5vh;
           align-self: flex-start !important;
         }
@@ -148,19 +116,7 @@
           font-family: "OverusedGrotesk-Light", sans-serif;
         }
 
-        .styled-paragraph {
-          font-size: 1rem;
-          // line-height: 1.5;
 
-          .highlighted {
-            font-weight: bold; // Cambia el peso de la fuente
-            color: red; // Cambia el color de las palabras
-            border-top: 2px solid red; // Agrega un borde superior
-            padding-top: 2px; // Ajusta el espacio entre el borde y el texto
-            display: inline-block; // Asegura que el span respete los bordes
-            align-items: flex-start;
-          }
-        }
       }
     }
 

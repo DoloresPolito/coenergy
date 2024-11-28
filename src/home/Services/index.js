@@ -8,7 +8,7 @@ import styles from "./styles.module.scss";
 export default function Services() {
   const items = [
     { name: "HOGARES", descripcion: "Descripción para hogares", logo: "/icons/casa.png", image: hogar },
-    { name: "CAMPO", descripcion: "Descripción para el campo", logo: "/icons/oveja.png", image: campo },
+    { name: "CAMPO", descripcion: "Descripción para el campo", logo: "/icons/hojas.png", image: campo },
     { name: "INDUSTRIAS", descripcion: "Descripción para industrias", logo: "/icons/fabrica.png", image: industria },
   ];
 
