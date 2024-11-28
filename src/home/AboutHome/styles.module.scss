@@ -15,12 +15,20 @@
     width: 95%;
     margin-top: 7vh;
 
+    @media only screen and (max-width: 800px) {
+      height:auto;
+      flex-direction: column;
+      margin-bottom: 5vh;
+    }
+
 
     .left, .right {
       width: 48%; // Reducir un poco para evitar problemas de espacio acumulado
       height: auto; // Ajustar a contenido
       // min-height: 70vh; // Garantizar una altura mínima
-
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
 
     }
 

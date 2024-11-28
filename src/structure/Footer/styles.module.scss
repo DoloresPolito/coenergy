@@ -18,14 +18,15 @@
       flex-direction: column;
       width: 35%;
       height: 100%;
-      border-right: 1px solid black;
+      border-right: 1px solid white;
       padding: 4vh 0vh;
   
       @media only screen and (max-width: 750px) {
         border-right: none;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid white;
         width: 100%;
         padding: 2vh 0;
+
       }
     }
   
@@ -38,7 +39,7 @@
   
       @media only screen and (max-width: 750px) {
         width: 100%;
-        padding: 0;
+ 
       }
     }
   
@@ -57,6 +58,7 @@
   
         @media only screen and (max-width: 750px) {
           flex-direction: column;
+
         }
   
         .col {
@@ -105,6 +107,7 @@
   
       @media only screen and (max-width: 750px) {
         flex-direction: column;
+        padding: 4vh 4vh;
       }
   
       .item {
