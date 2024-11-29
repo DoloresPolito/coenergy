@@ -11,7 +11,7 @@ const Loop = ({ reverse }) => {
     { src: "/logos/5.png", alt: "5" },
     { src: "/logos/1..png", alt: "6" },
     { src: "/logos/7.png", alt: "7" },
-    { src: "/logos/8.png", alt: "8" },
+
    
   ];
 
