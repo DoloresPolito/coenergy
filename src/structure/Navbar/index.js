@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation"; 
 import styles from "./style.module.scss";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { opacity, background } from "./anim";
 import Nav from "./Nav";
@@ -30,6 +30,8 @@ export default function Index() {
       },
     },
   };
+
+
 
   const navColor = pathname === "/" ? "white" : "black";
 

@@ -21,6 +21,7 @@ background-color: rgb(230, 229, 229);
 
       @media only screen and (max-width: 800px) {
         flex-direction: column;
+    
       }
 
       h4 {
@@ -51,6 +52,8 @@ background-color: rgb(230, 229, 229);
         max-width: 70vw;
         @media only screen and (max-width: 800px) {
           max-width: 100vw;
+      
+          text-align: justify;
         }
       }
 
@@ -61,6 +64,8 @@ background-color: rgb(230, 229, 229);
 
         @media only screen and (max-width: 800px) {
           width: 100%;
+          width: 98%;
+          margin: 0 auto;
         }
   
   
