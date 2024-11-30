@@ -3,7 +3,7 @@
     width: 100vw;
     height: 50vh;
     z-index: 100;
-    background-color: #506072;
+    background-color: #173A5B;
     justify-content: center;
     align-items: center;
   
@@ -18,12 +18,12 @@
       flex-direction: column;
       width: 35%;
       height: 100%;
-      border-right: 1px solid white;
+      // border-right: 1px solid white;
       padding: 4vh 0vh;
   
       @media only screen and (max-width: 750px) {
         border-right: none;
-        border-bottom: 1px solid white;
+        // border-bottom: 1px solid white;
         width: 100%;
         padding: 2vh 0;
 
@@ -36,6 +36,7 @@
       width: 65%;
       height: 100%;
       padding: 4vh 0vh;
+
   
       @media only screen and (max-width: 750px) {
         width: 100%;
@@ -61,40 +62,40 @@
 
         }
   
-        .col {
-          display: flex;
-          flex-direction: column;
-          padding-right: 2vh;
+        // .col {
+        //   display: flex;
+        //   flex-direction: column;
+        //   padding-right: 2vh;
   
-          .navitem {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 0.5vh;
-            width: auto !important;
+        //   .navitem {
+        //     position: relative;
+        //     display: inline-block;
+        //     margin-bottom: 0.5vh;
+        //     width: auto !important;
   
-            .underline {
-              position: absolute;
-              left: 0;
-              bottom: 0;
-              height: 1px;
-              background-color: white;
-              width: 0;
-              transition: width 0.5s ease-in-out;
+        //     .underline {
+        //       position: absolute;
+        //       left: 0;
+        //       bottom: 0;
+        //       height: 1px;
+        //       background-color: white;
+        //       width: 0;
+        //       transition: width 0.5s ease-in-out;
   
-            }
+        //     }
   
-            &:hover .underline {
-              width: 100%;
-            }
-          }
+        //     &:hover .underline {
+        //       width: 100%;
+        //     }
+        //   }
   
-          p {
-            font-size: 1.7vh;
-            padding-bottom: 0.5vh;
+        //   p {
+        //     font-size: 1.7vh;
+        //     padding-bottom: 0.5vh;
       
-            font-family: var(--font-montserrat), sans-serif; 
-          }
-        }
+        //     font-family: var(--font-montserrat), sans-serif; 
+        //   }
+        // }
       }
     }
   
@@ -116,7 +117,7 @@
         padding: 0 2vh;
   
         @media only screen and (max-width: 750px) {
-          padding: 0;
+          padding: 2vh 0vh;
         }
       }
     }
@@ -136,7 +137,7 @@
     h4 {
       font-family: "BwGradual", sans-serif;
       font-size: 2vh;
-      margin-bottom: 4vh;
+      margin-bottom: 3vh;
       color: white;
       font-family: var(--font-inter), sans-serif; 
       font-weight: 400;
@@ -155,6 +156,7 @@
       color: white;
       font-size: 2vh;
       font-family: var(--font-montserrat), sans-serif; 
+      margin-top: 1vh;
     }
   
     .responsiveBottom {

@@ -23,7 +23,7 @@ export default function Footer() {
         <div className={styles.topleft}>
           <h4 className={styles.textfooter}>
             La energía del futuro,
-            <br /> en tus manos hoy
+            <br /> en tus manos hoy.
           </h4>
 
           <div className={styles.navcontainer}>
@@ -87,7 +87,7 @@ export default function Footer() {
         <div className={styles.topright}>
           <div className={styles.item}>
             <h4>NAVEGACIÓN</h4>
-            <Link href="/">
+            {/* <Link href="/">
               <motion.div className={styles.navitem} whileHover="hover">
                 <p>NOSOTROS</p>
                 <motion.div
@@ -104,7 +104,7 @@ export default function Footer() {
                   variants={underlineVariants}
                 />
               </motion.div>
-            </Link>
+            </Link> */}
             <Link href="https://www.coenergy.ar/" target="_blank">
               <motion.div className={styles.navitem} whileHover="hover">
                 <p>TIENDA ONLINE</p>

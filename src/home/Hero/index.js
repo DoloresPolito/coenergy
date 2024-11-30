@@ -41,7 +41,7 @@ const Carousel = () => {
         <motion.div className={styles.motionDiv}>
           <div className={styles.topcontainer}>
             <motion.div variants={slideUp2} initial="initial" animate="enter">
-              <h1>COENERGY SA</h1>
+              {/* <h1>COENERGY SA</h1> */}
               <p>SOLUCIONES RENOVABLES</p>
             </motion.div>
           </div>

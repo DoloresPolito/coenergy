@@ -7,7 +7,7 @@ import { opacity, background } from "./anim";
 import Nav from "./Nav";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../../public/logo/logosoloblanco.png"
+import logo from "../../../public/logo/trans-grande.png"
 
 export default function Index() {
   const [isActive, setIsActive] = useState(false);
