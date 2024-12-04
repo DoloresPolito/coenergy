@@ -9,8 +9,8 @@ import logo from "../../../public/logo/logo horizontal.png"
 
 const Carousel = () => {
   const images = [
-    "/images/d.png",
     "/images/e.png",
+    "/images/d.png",
     "/images/b.png",
     // "/images/4.png",
     // "/images/5.png",
