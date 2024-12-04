@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
-import campo from "../../../public/images/services/campo.png";
-import hogar from "../../../public/images/services/hogar.png";
-import industria from "../../../public/images/services/industria.png";
+import campo from "../../../public/images/services/campo1.png";
+import hogar from "../../../public/images/services/casas1.png";
+import industria from "../../../public/images/services/industria1.png";
 import styles from "./styles.module.scss";
+import AnimatedDiv from "@/app/components/AnimatedDiv";
 
 export default function Services() {
   const items = [
@@ -14,19 +15,20 @@ export default function Services() {
       logo: "/icons/casa.png",
       image: hogar,
     },
+   
+    {
+      name: "INDUSTRIAS",
+      descripcion:
+        "En la industria, la energía representa un costo importante en la producción. Optimizar su uso puede reducir gastos y mejorar la eficiencia. Evaluamos tus necesidades para ofrecer soluciones adaptadas que te ayuden a ahorrar y a ser más competitivo y sustentable.",
+      logo: "/icons/fabrica.png",
+      image: industria,
+    },
     {
       name: "CAMPO",
       descripcion:
         "El consumo energético en el campo puede ser un desafío, pero también una oportunidad para mejorar. Nuestras bombas solares están diseñadas para optimizar tus costos y ofrecerte una solución sostenible. Contamos con la experiencia para brindarte alternativas a medida que se ajusten a tus necesidades.",
       logo: "/icons/hojas.png",
       image: campo,
-    },
-    {
-      name: "INDUSTRIAS",
-      descripcion:
-        "En la industria, el costo energético representa una parte significativa de los gastos de producción, y optimizarlo puede marcar la diferencia. Analizamos tus necesidades específicas para ofrecerte soluciones personalizadas que reduzcan costos y aumenten la eficiencia. Nuestro objetivo es brindarte tecnología de vanguardia para que tu negocio sea más competitivo y sostenible.",
-      logo: "/icons/fabrica.png",
-      image: industria,
     },
   ];
 
@@ -35,7 +37,11 @@ export default function Services() {
       <div className={styles.container}>
         <div className={styles.top}>
           <h4>SERVICIOS</h4>
+          <AnimatedDiv>
+
+     
           <h6>Soluciones solares para todas las necesidades</h6>
+          </AnimatedDiv>
         </div>
 
         <div className={styles.bottom}>

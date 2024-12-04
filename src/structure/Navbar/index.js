@@ -1,13 +1,13 @@
 "use client";
 import { usePathname } from "next/navigation"; 
 import styles from "./style.module.scss";
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { opacity, background } from "./anim";
+import { opacity} from "./anim";
 import Nav from "./Nav";
 import Link from "next/link";
-import Image from "next/image";
-import logo from "../../../public/logo/trans-grande.png"
+// import Image from "next/image";
+// import logo from "../../../public/logo/logo horizontal.png"
 
 export default function Index() {
   const [isActive, setIsActive] = useState(false);
@@ -35,16 +35,18 @@ export default function Index() {
 
   const navColor = pathname === "/" ? "white" : "black";
 
+
+
   return (
     <div className={styles.header}>
       <div className={styles.bar}>
 
           <div className={styles.logocontainer}>
-            <div className={styles.header2}>
+            {/* <div className={styles.header2}>
               <div className={styles.logo}>
                <Image src={logo} alt="logo"/>
               </div>
-            </div>
+            </div> */}
           </div>
       
         <div
@@ -58,6 +60,7 @@ export default function Index() {
               isActive ? styles.burgerActive : ""
             }`}
           ></div>
+         
           <div className={styles.label}>
             <motion.p
               variants={opacity}
@@ -65,7 +68,7 @@ export default function Index() {
             >
               Menu
             </motion.p>
-            <motion.p variants={opacity} animate={isActive ? "open" : "closed"}>
+            <motion.p variants={opacity} animate={isActive ? "open" : "closed"} style={{color:"black"}}>
             Cerrar
             </motion.p>
           </div>
@@ -79,7 +82,7 @@ export default function Index() {
                   <Link href={link.href}>
                     <motion.div className={styles.navitem} whileHover="hover" style={{color:navColor}}>
                       <p className="styled-paragraph">
-                        <span className="highlighted">{link.id} </span>{" "}
+                        {/* <span className="highlighted">{link.id} </span>{" "} */}
                         {link.title}
                       </p>
                       <motion.div

@@ -1,0 +1,65 @@
+.section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  overflow: hidden;
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
+  z-index: 10000;
+  width: 99%;
+  margin: 0 auto;
+
+  .content {
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+    // mix-blend-mode: difference;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      &.firsttext {
+        font-size: 5vh;
+        // align-self: flex-end;
+        // text-transform: uppercase;
+        mix-blend-mode: difference;
+        z-index: 10;
+        text-align: center;
+      }
+
+      // &.second-text {
+      //   font-size: 5vw;
+      //   text-transform: uppercase;
+      //   mix-blend-mode: difference;
+      // }
+    }
+  }
+
+  .background {
+    position: fixed;
+    top: -10vh;
+    left: 0;
+    height: 120vh;
+    width: 100%;
+    z-index: -1;
+
+    .motionbackground {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+      }
+    }
+  }
+}

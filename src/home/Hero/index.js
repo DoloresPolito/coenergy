@@ -3,15 +3,18 @@ import { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 import { motion } from "framer-motion";
 import { slideUp, slideUp2, slideUp3 } from "./animation";
+import Navbar from "../../structure/Navbar"
+import Image from "next/image";
+import logo from "../../../public/logo/logo horizontal.png"
 
 const Carousel = () => {
   const images = [
-    "/images/1.png",
-    "/images/2.png",
-    "/images/3.png",
-    "/images/4.png",
-    "/images/5.png",
-    "/images/6.png",
+    "/images/d.png",
+    "/images/e.png",
+    "/images/b.png",
+    // "/images/4.png",
+    // "/images/5.png",
+    // "/images/6.png",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,6 +39,12 @@ const Carousel = () => {
           }}
         />
       ))}
+          {/* <Navbar /> */}
+          <div className={styles.header2}>
+              <div className={styles.logo}>
+               <Image src={logo} alt="logo"/>
+              </div>
+            </div>
 
       <div className={styles.overlay}>
         <motion.div className={styles.motionDiv}>
@@ -54,9 +63,10 @@ const Carousel = () => {
               className={styles.textcontainer}
             >
               <p className={styles.results}>
-                Innovamos y creamos <span>soluciones energéticas</span>{" "}
+              Energía solar para tu hogar o negocio, eficiente y sostenible.
+                {/* Innovamos y creamos <span>soluciones energéticas</span>{" "}
                 inteligentes cuidando el <span>medioambiente</span> en busca de
-                la mejor experiencia para <span>nuestros clientes.</span>
+                la mejor experiencia para <span>nuestros clientes.</span> */}
               </p>
 
               {/* <div className={styles.bottombuttons}>

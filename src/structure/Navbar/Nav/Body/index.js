@@ -3,6 +3,8 @@ import styles from "./style.module.scss";
 import { blur, translate } from "../../anim";
 import Link from "next/link";
 import React from "react";
+
+
 export default function Body({
   links,
   selectedLink,
@@ -34,28 +36,29 @@ export default function Body({
 
   return (
     <div className={styles.body}>
+     
       {links.map((link, index) => {
-        const { title, href, i } = link;
+        const { title, href } = link;
         return (
-          <React.Fragment key={i}>
-          <Link href={href} onClick={handleLinkClick}>
-            <motion.p
-              onMouseOver={() => {
-                setSelectedLink({ isActive: true, index });
-              }}
-              onMouseLeave={() => {
-                setSelectedLink({ isActive: false, index });
-              }}
-              variants={blur}
-              animate={
-                selectedLink.isActive && selectedLink.index != index
-                  ? "open"
-                  : "closed"
-              }
-            >
-              {getChars(title)}
-            </motion.p>
-          </Link>
+          <React.Fragment key={index}>
+            <Link href={href} onClick={handleLinkClick} target={link.target}>
+              <motion.p
+                onMouseOver={() => {
+                  setSelectedLink({ isActive: true, index });
+                }}
+                onMouseLeave={() => {
+                  setSelectedLink({ isActive: false, index });
+                }}
+                variants={blur}
+                animate={
+                  selectedLink.isActive && selectedLink.index !== index
+                    ? "open"
+                    : "closed"
+                }
+              >
+                {getChars(title)}
+              </motion.p>
+            </Link>
           </React.Fragment>
         );
       })}

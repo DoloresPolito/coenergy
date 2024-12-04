@@ -1,19 +1,65 @@
 "use client";
 import styles from "./styles.module.scss";
+import { useState } from "react";
 import AnimatedDiv from "@/app/components/AnimatedDiv";
+import Image from "next/image";
+import blue from "../../../public/icons/blue.png";
+import white from "../../../public/icons/white.png";
 
 export default function AboutHome() {
+  const [isHovered, setIsHovered] = useState(false);
   return (
     <>
       <div className={styles.section}>
         <div className={styles.container}>
-          <div className={styles.left}>
+          <div className={styles.titlecontainer}>
             <h4>SOBRE NOSOTROS</h4>
-            <h6>Impulsando hogares y negocios con energía solar.</h6>
+            <AnimatedDiv>
+            <h6>
+              Innovamos y creamos soluciones energéticas inteligentes cuidando
+              el medioambiente en busca de la mejor experiencia para nuestros
+              clientes.
+            </h6>
+            </AnimatedDiv>
           </div>
 
+          <div className={styles.numbercontainer}>
+            <div className={styles.item}>
+              <h3>7</h3>
+              <h5>años de trabajo</h5>
+            </div>
 
-            <div className={styles.right}>
+            <div className={styles.item}>
+              <h3>400</h3>
+              <h5>instalaciones</h5>
+            </div>
+
+            <div className={styles.item}>
+              <h3>15</h3>
+              <h5>trabajadores</h5>
+            </div>
+          </div>
+
+          <div
+            className={styles.buttoncontainer}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <p>Más sobre nosotros</p>
+            <Image
+              src={isHovered ? white : blue}
+              alt="flecha"
+              className={styles.icon}
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+{
+  /* <div className={styles.right}>
             <AnimatedDiv>
               <p className={styles.p1}>
                 Desde Gualeguaychú, Entre Ríos, Argentina, hemos creado COENERGY
@@ -33,10 +79,5 @@ export default function AboutHome() {
                 en energías renovables buscando la mejor experiencia para el
                 cliente.
               </p>
-            </div>
-
-        </div>
-      </div>
-    </>
-  );
+            </div> */
 }

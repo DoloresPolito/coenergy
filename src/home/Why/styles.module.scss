@@ -3,14 +3,13 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  color: grey;
+  // color: grey;
   justify-content: center;
   align-items: center;
   // margin-left: 1vw;
   // margin-right: 1vw;
   margin-top: 10vh;
-  // background-color: red;
-
+  margin-bottom: 10vh;
   @media only screen and (max-width: 600px) {
     width: 96%;
     margin: 0 auto;
@@ -31,18 +30,22 @@
       display: flex;
       flex-direction: column;
 
-      h4 {
-        font-size: 2.5vh;
-        margin-bottom: 5vh;
-        font-family: var(--font-montserrat), sans-serif;
-        font-weight: 500;
-      }
 
+      h4 {
+        font-size: 2.2vh;
+        margin-bottom: 3vh;
+        font-family: var(--font-montserrat), sans-serif; 
+        font-weight: 500;
+        color:#2D82FF
+      }
+  
       h6 {
         font-size: 4vh;
-        max-width: 60vh;
-        font-family: var(--font-inter), sans-serif;
+        max-width: 80vw;
+        font-family: var(--font-inter), sans-serif; 
         font-weight: 400;
+        color:#1D1D1D;
+        margin-bottom: 3vh;
       }
     }
 
@@ -58,15 +61,18 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        border-bottom: 1px solid grey;
+        border-bottom: 0.2px solid #A1A1A1;
+        margin: 4vh 2vh;
+        max-width: 80vh;
 
         @media only screen and (max-width: 800px) {
           flex-direction: column;
-          margin-top: 4vh;
+          margin: 0vh;
+          margin-top: 4vh ;
         }
 
         &.lastItem {
-          border-bottom: 1px solid grey;
+          border-bottom: 0.2px solid #A1A1A1;
         }
 
         h2 {
@@ -76,13 +82,15 @@
           font-weight: 300;
           margin-bottom: 2vh;
           margin-top: 2vh;
+          color:#2D82FF;
         }
 
         h4 {
           font-family: var(--font-montserrat), sans-serif;
-          font-weight: 600;
+          font-weight: 500;
           font-size: 2.5vh;
           margin-bottom: 2vh;
+          color:#181818;
         }
 
         p {
@@ -90,6 +98,8 @@
           font-weight: 300;
           font-size: 2vh;
           margin-bottom: 2vh;
+          color:#A1A1A1;
+
 
         }
       }

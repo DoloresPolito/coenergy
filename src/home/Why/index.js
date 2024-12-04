@@ -2,6 +2,7 @@
 import styles from "./styles.module.scss";
 import AnimatedDiv from "@/app/components/AnimatedDiv";
 
+
 export default function WorkProgressV2() {
   const items = [
     {
@@ -32,7 +33,11 @@ export default function WorkProgressV2() {
         <div className={styles.container}>
           <div className={styles.left}>
             <h4>BENEFICIOS</h4>
-            <h6>Porque elegir energÍa solar?</h6>
+            <AnimatedDiv>
+
+          
+            <h6>¿Por qué elegir energÍa solar?</h6>
+            </AnimatedDiv>
           </div>
 
           <div className={styles.right}>
@@ -48,10 +53,10 @@ export default function WorkProgressV2() {
   );
 }
 
-const Item = ({ item, isLast }) => {
+const Item = ({ item, isLast}) => {
   return (
     <>
-      <div className={`${styles.item} ${isLast ? styles.lastItem : ""}`}>
+      <div className={`${styles.item} ${isLast ? styles.lastItem : ""}`} key={item.index}>
         <div className={styles.indexcontainer}>
           <h2>{item.index}</h2>
         </div>

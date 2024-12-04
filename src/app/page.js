@@ -1,16 +1,14 @@
-
 "use client";
 import { useEffect } from "react";
 import Lenis from "lenis";
 import styles from "./page.module.css";
-import Carousel from "@/home/Hero";
 import WorkProgressV2 from "@/home/Why";
 import LogosMoving from "@/home/LogosMoving";
-import AboutHome from "@/home/AboutHome";
-import Asesoramiento from "@/home/Asesoramiento";
 import Services from "@/home/Services";
+import Intro from "@/structure/Intro";
+import Description from "@/structure/Description";
+import Section from "@/structure/Section";
 export default function Home() {
-
   useEffect(() => {
     const lenis = new Lenis();
 
@@ -25,13 +23,12 @@ export default function Home() {
 
   return (
     <div className={styles.page}>
-     <Carousel />
-     <AboutHome/>
-     <Asesoramiento/>
-     <Services/>
-     <WorkProgressV2/>
-     <LogosMoving/>
-
+      <Intro />
+      <Description />
+      <Services />
+      <WorkProgressV2 />
+      <LogosMoving />
+      <Section />
     </div>
   );
 }

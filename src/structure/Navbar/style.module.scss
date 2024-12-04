@@ -1,38 +1,11 @@
 .header {
   position: absolute;
-  width: 100%;
+  width: 98%;
   box-sizing: border-box;
   padding: 3vh 2vw;
   z-index: 1000;
   top: 0;
-  // border-bottom: 1px solid white;
-
-  margin-top: 4vh;
-
-  .header2 {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    z-index: 1;
-    justify-content: space-between;
-    width: auto;
-    font-weight: 300;
-    box-sizing: border-box;
-    align-items: center;
-    margin-top: -7vh;
-    margin-left: 0.5vh;
-    z-index: 2000;
-
-    .logo {
-      display: flex;
-      cursor: pointer;
-      width: auto;
-      img {
-        height: 15vh;
-        width: 21vh;
-      }
-    }
-  }
+  margin-top: 1.5vh;
 
   .background {
     background-color: white;
@@ -201,19 +174,24 @@
         &::before {
           top: 4px;
         }
-      }
 
-      .burgerActive {
+         // Cambios cuando está activa
+      &.burgerActive {
         &::after {
           transform: rotate(45deg);
           top: -1px;
+          background-color: black; // Cambia a negro
         }
 
         &::before {
           transform: rotate(-45deg);
           top: 1px;
+          background-color: black; // Cambia a negro
         }
       }
+      }
+
+     
     }
   }
 }
