@@ -30,13 +30,13 @@ export default function AboutHome() {
             </div>
 
             <div className={styles.item}>
-              <h3>400</h3>
-              <h5>instalaciones</h5>
+              <h3>+105</h3>
+              <h5>asesoramientos</h5>
             </div>
 
             <div className={styles.item}>
-              <h3>15</h3>
-              <h5>trabajadores</h5>
+              <h3>500</h3>
+              <h5>instalaciones</h5>
             </div>
           </div>
 

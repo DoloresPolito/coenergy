@@ -41,11 +41,13 @@
           color: black;
           padding-bottom: 5vh;
           font-weight: 300;
+          font-size: 2.2vh;
         }
 
         p {
           color: #a1a1a1;
           font-family: var(--font-montserrat), sans-serif;
+          font-size: 2vh;
           @media only screen and (max-width: 1000px) {
             text-align: center;
           }
@@ -80,6 +82,8 @@
           p {
             color: black;
             padding: 5vh;
+            font-size: 2.2vh;
+  
             @media only screen and (max-width: 500px) {
               padding: 0;
               text-align: center;
@@ -97,6 +101,7 @@
             color: #a1a1a1;
             font-family: var(--font-montserrat), sans-serif;
             text-align: center;
+            font-size: 2.3vh;
           }
         }
       }

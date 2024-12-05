@@ -40,11 +40,11 @@ export default function Index({setIsActive}) {
 
   return (
     <motion.div variants={height} initial="initial" animate="enter" exit="exit" className={styles.nav}>
-       <div className={styles.header2}>
+       {/* <div className={styles.header2}>
         <div className={styles.logo}>
           <Image src={logo} alt="logo" />
         </div>
-      </div>
+      </div> */}
       <div className={styles.wrapper}>
      
         <div className={styles.container}>
