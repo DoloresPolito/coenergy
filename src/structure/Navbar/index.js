@@ -14,7 +14,7 @@ export default function Index() {
   const pathname = usePathname(); 
   const navdesktop = [
     { id: "1.", title: "INICIO", url: "/", href: "/" },
-    // { id: "2.", title: "NOSOTROS", url: "/", href: "/nosotros" },
+    { id: "2.", title: "NOSOTROS", url: "/", href: "/nosotros" },
     // { id: "3.", title: "CONTACTO", url: "/contact", href: "/contacto" },
     { id: "4.", title: "TIENDA ONLINE", url: "", href: "https://www.coenergy.ar/" },
   ];
@@ -33,7 +33,7 @@ export default function Index() {
 
 
 
-  const navColor = pathname === "/" ? "white" : "black";
+  const navColor = pathname === "/" ? "white" : "white";
 
 
 

@@ -11,15 +11,15 @@ import logo from "../../../../public/logo/logo horizontal negro.png";
 const links = [
   {
     title: "INICIO",
-    href: "",
+    href: "/",
     target:"_self"
 
   },
-  // {
-  //   title: "NOSOTROS",
-  //   href: "nosotros",
+  {
+    title: "NOSOTROS",
+    href: "/nosotros",
 
-  // },
+  },
   // {
   //   title: "CONTACTO",
   //   href: "contacto",

@@ -19,7 +19,7 @@ export default function AboutDescription() {
             </AnimatedDiv>
           </div>
 
-          <div className={styles.numbercontainer}>
+          {/* <div className={styles.numbercontainer}>
             <div className={styles.item1}>
               <h4>MISIÓN</h4>
               <h5>texto mision</h5>
@@ -31,7 +31,7 @@ export default function AboutDescription() {
             </div>
 
           
-          </div>
+          </div> */}
 
          
         </div>
