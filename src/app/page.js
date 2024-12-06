@@ -8,6 +8,7 @@ import Services from "@/home/Services";
 import Intro from "@/structure/Intro";
 import Description from "@/structure/Description";
 import Section from "@/structure/Section";
+import AboutProcess from "@/about/AboutProcess";
 export default function Home() {
   useEffect(() => {
     const lenis = new Lenis();
@@ -27,6 +28,7 @@ export default function Home() {
       <Description />
       <Services />
       <WorkProgressV2 />
+      <AboutProcess/>
       <LogosMoving />
       <Section />
     </div>

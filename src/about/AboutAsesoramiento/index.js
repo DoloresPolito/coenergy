@@ -22,7 +22,8 @@ export default function AboutAsesoramiento() {
 
             <AnimatedDiv>
             <h5>
-            A partir de valores tales como la conservación de los recursos naturales, es que hemos replicado nuestro modelo de negocios en otras cuatros provincias de nuestro país. Con presencia en Santa Fe, Buenos Aires, Neuquén y Córdoba, forjamos el futuro con las mejores tecnologías amigables con el medio ambiente.Nuestro objetivo principal es ser líderes en la provisión de soluciones en energías renovables buscando la mejor experiencia para el cliente.
+            Una etapa fundamental durante el análisis de un proyecto consiste en realizar una visita técnica con el fin de evaluar el nivel de eficiencia energética alcanzado mediante las tecnologías disponibles.<br/> Esto nos permitirá evaluar correctamente la mejor solución de instalaciones fotovoltaicas o de generación térmica.
+            
             </h5>
             </AnimatedDiv>
           </div>

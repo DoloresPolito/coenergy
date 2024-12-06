@@ -33,7 +33,10 @@ export default function NewFooter() {
                 <Link href="https://www.coenergy.ar/" target="_blank">
                   <p>Tienda Online</p>
                 </Link>
-                <p>Contacto</p>
+                <Link href="/nosotros">
+                  <p>Nosotros</p>
+                </Link>
+                {/* <p>Contacto</p> */}
               </div>
 
               <div className={styles.line2}>

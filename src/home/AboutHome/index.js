@@ -5,6 +5,7 @@ import AnimatedDiv from "@/app/components/AnimatedDiv";
 import Image from "next/image";
 import blue from "../../../public/icons/blue.png";
 import white from "../../../public/icons/white.png";
+import Link from "next/link";
 
 export default function AboutHome() {
   const [isHovered, setIsHovered] = useState(false);
@@ -40,6 +41,8 @@ export default function AboutHome() {
             </div>
           </div>
 
+<Link href="/nosotros">
+
           <div
             className={styles.buttoncontainer}
             onMouseEnter={() => setIsHovered(true)}
@@ -52,6 +55,7 @@ export default function AboutHome() {
               className={styles.icon}
             />
           </div>
+          </Link>
         </div>
       </div>
     </>

@@ -24,7 +24,7 @@ export default function Section() {
       </div>
       <div className={styles.background}>
         <motion.div style={{ y }} className={styles.motionbackground}>
-          <Image src={Background} fill alt="image" className={styles.image} />
+          <Image src={Background} fill alt="image" className={styles.image}    priority />
         </motion.div>
       </div>
     </div>

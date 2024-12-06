@@ -14,7 +14,7 @@ export default function AboutDescription() {
             <h4>QUIÉNES SOMOS</h4>
             <AnimatedDiv>
             <h6>
-            A partir de valores tales como la conservación de los recursos naturales, es que hemos replicado nuestro modelo de negocios en otras cuatros provincias de nuestro país. Con presencia en Santa Fe, Buenos Aires, Neuquén y Córdoba, forjamos el futuro con las mejores tecnologías amigables con el medio ambiente.Nuestro objetivo principal es ser líderes en la provisión de soluciones en energías renovables buscando la mejor experiencia para el cliente.
+            A partir de valores tales como la conservación de los recursos naturales, es que hemos replicado nuestro modelo de negocios en otras cuatros provincias de nuestro país. <br/> Con presencia en Santa Fe, Buenos Aires, Neuquén y Córdoba, forjamos el futuro con las mejores tecnologías amigables con el medio ambiente.<br/> <br/> Nuestro objetivo principal es ser líderes en la provisión de soluciones en energías renovables buscando la mejor experiencia para el cliente.
             </h6>
             </AnimatedDiv>
           </div>

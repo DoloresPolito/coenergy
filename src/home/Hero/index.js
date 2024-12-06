@@ -6,12 +6,13 @@ import { slideUp, slideUp2, slideUp3 } from "./animation";
 import Navbar from "../../structure/Navbar"
 import Image from "next/image";
 import logo from "../../../public/logo/logo horizontal.png"
+import Link from "next/link";
 
 const Carousel = () => {
   const images = [
     "/images/e.png",
-    "/images/d.png",
-    "/images/b.png",
+    "/images/dcomp.png",
+    "/images/bcomp.png",
     // "/images/4.png",
     // "/images/5.png",
     // "/images/6.png",
@@ -40,11 +41,14 @@ const Carousel = () => {
         />
       ))}
           {/* <Navbar /> */}
+          <Link href="/">
+    
           <div className={styles.header2}>
               <div className={styles.logo}>
-               <Image src={logo} alt="logo"/>
+               <Image src={logo} alt="logo"   priority />
               </div>
             </div>
+            </Link>
 
       <div className={styles.overlay}>
         <motion.div className={styles.motionDiv}>

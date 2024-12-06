@@ -4,13 +4,11 @@ import styles from "./styles.module.scss";
 import { motion } from "framer-motion";
 import { slideUp, slideUp2, slideUp3 } from "../../home/Hero/animation";
 import Image from "next/image";
-import logo from "../../../public/logo/logo horizontal.png"
+import logo from "../../../public/logo/logo horizontal.png";
+import Link from "next/link";
 
 const Carousel = () => {
-  const images = [
-    "/images/1.png",
-
-  ];
+  const images = ["/images/1comp.png"];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -34,11 +32,13 @@ const Carousel = () => {
           }}
         />
       ))}
-          <div className={styles.header2}>
-              <div className={styles.logo}>
-               <Image src={logo} alt="logo"/>
-              </div>
-            </div>
+      <Link href="/">
+        <div className={styles.header2}>
+          <div className={styles.logo}>
+            <Image src={logo} alt="logo" priority />
+          </div>
+        </div>
+      </Link>
 
       <div className={styles.overlay}>
         <motion.div className={styles.motionDiv}>
@@ -56,10 +56,10 @@ const Carousel = () => {
               className={styles.textcontainer}
             >
               <p className={styles.results}>
-              Desde Gualeguaychú, Entre Ríos, Argentina, en COENERGY SA ofrecemos soluciones integrales para quienes buscan ahorrar y cuidar el medio ambiente.
+                Desde Gualeguaychú, Entre Ríos, Argentina, en COENERGY SA
+                ofrecemos soluciones integrales para quienes buscan ahorrar y
+                cuidar el medio ambiente.
               </p>
-
-              
             </motion.div>
           </div>
         </motion.div>
