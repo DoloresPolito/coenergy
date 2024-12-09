@@ -9,6 +9,7 @@ import Intro from "@/structure/Intro";
 import Description from "@/structure/Description";
 import Section from "@/structure/Section";
 import AboutProcess from "@/about/AboutProcess";
+import Projects from "@/home/Projects";
 export default function Home() {
   useEffect(() => {
     const lenis = new Lenis();
@@ -27,8 +28,10 @@ export default function Home() {
       <Intro />
       <Description />
       <Services />
+
       <WorkProgressV2 />
-      <AboutProcess/>
+      <Projects/>
+      {/* <AboutProcess/> */}
       <LogosMoving />
       <Section />
     </div>

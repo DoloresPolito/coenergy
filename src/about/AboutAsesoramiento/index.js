@@ -2,9 +2,9 @@
 import styles from "./styles.module.scss";
 import { useState } from "react";
 import AnimatedDiv from "@/app/components/AnimatedDiv";
-import Image from "next/image";
-import blue from "../../../public/icons/blue.png";
-import white from "../../../public/icons/white.png";
+// import Image from "next/image";
+// import blue from "../../../public/icons/blue.png";
+// import white from "../../../public/icons/white.png";
 
 export default function AboutAsesoramiento() {
   const [isHovered, setIsHovered] = useState(false);

@@ -82,7 +82,7 @@ const MobileBottom = ({items}) => {
 
         {items.map((item, id) => (
           <div key={id} className={styles.itemmobile}>
-                   <Image src={item.image} alt={item.name} className={styles.image} />
+                   {/* <Image src={item.image} alt={item.name} className={styles.image} /> */}
             {/* <Image
               src={item.logo}
               alt={`${item.name} logo`}
