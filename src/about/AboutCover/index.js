@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 import { motion } from "framer-motion";
 import { slideUp, slideUp2, slideUp3 } from "../../home/Hero/animation";
 import Image from "next/image";
-import logo from "../../../public/logo/logo horizontal.png";
+// import logo from "../../../public/logo/logo horizontal.png";
 import Link from "next/link";
 
 const Carousel = () => {
@@ -35,7 +35,7 @@ const Carousel = () => {
       <Link href="/">
         <div className={styles.header2}>
           <div className={styles.logo}>
-            <Image src={logo} alt="logo" priority />
+            {/* <Image src={logo} alt="logo" priority /> */}
           </div>
         </div>
       </Link>

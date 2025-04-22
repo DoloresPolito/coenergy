@@ -1,5 +1,5 @@
 import React from "react";
-import Loop from "@/app/components/Loop";
+import Loop from "@/components/Loop";
 import styles from "./styles.module.scss";
 const LogosMoving = () => {
   return (

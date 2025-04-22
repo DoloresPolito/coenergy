@@ -1,6 +1,6 @@
 "use client";
 import styles from "./styles.module.scss";
-import AnimatedDiv from "@/app/components/AnimatedDiv";
+import AnimatedDiv from "@/components/AnimatedDiv";
 import image from "../../../public/images/asesoramiento.png"
 import Image from "next/image";
 export default function Asesoramiento() {

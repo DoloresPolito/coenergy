@@ -7,6 +7,7 @@
   justify-content: center;
   margin: 0 auto;
 
+
   @media (max-width: 600px) {
     margin-top: 10vh;
 
@@ -15,11 +16,14 @@
   .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    // align-items: flex-start;
+    // justify-content: flex-start;
     height: auto;
     width: 95%;
     margin-top: 2vh;
+
+
+
 
     h4 {
       font-size: 2.2vh;
@@ -42,9 +46,12 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr); // Dos columnas
       gap: 3vh; // Espacio entre filas y columnas
+
       width: 90%;
       margin-top: 3vh;
       margin-bottom: 3vh;
+
+
 
       @media (max-width: 900px) {
         grid-template-columns: 1fr; // Una columna en pantallas pequeñas
@@ -62,15 +69,20 @@
         width: auto;
         width: 100%;
 
+
         @media (max-width: 900px) {
           padding: 3vh 0vh 3vh 0vh;
         }
 
         img {
-          width: 100%; // Hace que la imagen ocupe todo el ancho disponible
-          height: auto;
+          width: 45vw; // Hace que la imagen ocupe todo el ancho disponible
+          height: 50vh;
           margin-bottom: 3vh;
           object-fit: cover;
+
+          @media (max-width: 900px) {
+            width: 100%;
+          }
         }
 
         h3 {

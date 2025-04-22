@@ -6,7 +6,7 @@ import proyecto3 from "../../../public/images/proyectos/proyecto3.png";
 import proyecto4 from "../../../public/images/proyectos/proyecto4.png";
 
 import styles from "./styles.module.scss";
-import AnimatedDiv from "@/app/components/AnimatedDiv";
+import AnimatedDiv from "@/components/AnimatedDiv";
 
 export default function Projects() {
   const items = [

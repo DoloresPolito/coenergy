@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../structure/Navbar";
 import Footer from "@/structure/Footer";
 import NewFooter from "@/structure/NewFooter";
+import Header from "@/structure/Header";
 
 // Fuentes locales
 const geistSans = localFont({
@@ -57,7 +58,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${inter.variable}`}
       >
-        <Navbar />
+        {/* <Navbar /> */}
+        <Header/>
         {children}
         <NewFooter />
       </body>

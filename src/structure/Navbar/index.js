@@ -33,7 +33,7 @@ export default function Index() {
 
 
 
-  const navColor = pathname === "/" ? "white" : "white";
+  const navColor = pathname === "/" ? "black" : "white";
 
 
 

@@ -1,6 +1,6 @@
 "use client";
 import styles from "./styles.module.scss";
-import AnimatedDiv from "@/app/components/AnimatedDiv";
+import AnimatedDiv from "@/components/AnimatedDiv";
 
 
 export default function WorkProgressV2() {

@@ -1,7 +1,7 @@
 "use client";
 import styles from "./styles.module.scss";
 import { useState } from "react";
-import AnimatedDiv from "@/app/components/AnimatedDiv";
+import AnimatedDiv from "@/components/AnimatedDiv";
 
 
 export default function AboutDescription() {

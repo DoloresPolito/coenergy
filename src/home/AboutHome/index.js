@@ -1,26 +1,28 @@
 "use client";
 import styles from "./styles.module.scss";
 import { useState } from "react";
-import AnimatedDiv from "@/app/components/AnimatedDiv";
+import AnimatedDiv from "@/components/AnimatedDiv";
 import Image from "next/image";
 import blue from "../../../public/icons/blue.png";
 import white from "../../../public/icons/white.png";
 import Link from "next/link";
+import Portada from "@/components/Portada";
 
 export default function AboutHome() {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <>
+   
       <div className={styles.section}>
         <div className={styles.container}>
           <div className={styles.titlecontainer}>
             <h4>SOBRE NOSOTROS</h4>
             <AnimatedDiv>
-            <h6>
-              Innovamos y creamos soluciones energéticas inteligentes cuidando
-              el medioambiente en busca de la mejor experiencia para nuestros
-              clientes.
-            </h6>
+              <h6>
+                Innovamos y creamos soluciones energéticas inteligentes cuidando
+                el medioambiente en busca de la mejor experiencia para nuestros
+                clientes.
+              </h6>
             </AnimatedDiv>
           </div>
 
@@ -41,23 +43,24 @@ export default function AboutHome() {
             </div>
           </div>
 
-<Link href="/nosotros">
-
-          <div
-            className={styles.buttoncontainer}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            <p>Más sobre nosotros</p>
-            <Image
-              src={isHovered ? white : blue}
-              alt="flecha"
-              className={styles.icon}
-            />
-          </div>
+          <Link href="/nosotros">
+            <div
+              className={styles.buttoncontainer}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <p>Más sobre nosotros</p>
+              <Image
+                src={isHovered ? white : blue}
+                alt="flecha"
+                className={styles.icon}
+              />
+            </div>
           </Link>
         </div>
+
       </div>
+
     </>
   );
 }

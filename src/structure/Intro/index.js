@@ -6,6 +6,7 @@ import styles from "./styles.module.scss";
 import Hero from "../../home/Hero";
 import { usePathname } from "next/navigation"; // Importa usePathname
 import AboutCover from "../../about/AboutCover"
+import HeroV2 from "@/home/HeroV2";
 
 export default function Intro() {
   const container = useRef(null);
@@ -42,7 +43,7 @@ export default function Intro() {
 
   // Renderiza Hero o AboutCover dependiendo de la ruta
   const renderHeroComponent = () => {
-    if (pathname === "/") return <Hero />;
+    if (pathname === "/") return <HeroV2 />;
     if (pathname === "/nosotros") return <AboutCover />;
     return null; // Por si quieres manejar rutas no definidas
   };

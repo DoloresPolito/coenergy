@@ -1,0 +1,42 @@
+.contactcontainer {
+    .title {
+      color: #2d82ff;
+      margin-bottom: 3vh;
+  
+      @media (max-width: 768px) {
+        margin-bottom: 1vh;
+      }
+    }
+  
+    .linkcontainer {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 1vh;
+      align-items: center;
+      p {
+        margin-left: 2vh;
+      }
+    }
+  
+    a {
+      text-decoration: underline;
+      text-decoration-color: black;
+      text-underline-offset: 0.2vh;
+      color: black !important;
+    }
+  
+    img{
+      height: 2.5vh;
+      width: auto;
+    }
+
+    .linkedin{
+      height: 4vh;
+      width: auto;
+      margin-left: -0.7vh;
+    }
+  
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }

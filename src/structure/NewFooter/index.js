@@ -6,9 +6,12 @@ import Image from "next/image";
 import { useState } from "react";
 import insta from "../../../public/icons/insta.png";
 import plane from "../../../public/icons/plane.png";
+import linkedin from "../../../public/icons/linkedin100.png";
 
 import blue from "../../../public/icons/blue.png";
 import white from "../../../public/icons/white.png";
+
+import logo from "../../../public/logo/logoazulgrande.png"
 export default function NewFooter() {
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -76,11 +79,18 @@ export default function NewFooter() {
                     <Image src={plane} alt="e-mail" />
                   </div>
                 </Link>
+
+                <Link href="mailto:info@coenergysa.com">
+                  <div className={styles.circle}>
+                    <Image src={linkedin} alt="linkedin" />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
           <div className={styles.bottom}>
-            <h1>COENERGY SA</h1>
+            {/* <h1>COENERGY SA</h1> */}
+            {/* <Image src={logo} alt="logo" /> */}
           </div>
         </div>
       </div>

@@ -1,0 +1,85 @@
+
+  [ {
+    "id": 0,
+    "name":"Hermann",
+    "titulo1": "Instalación Industrial",
+    "titulo2": "Sistema On-Grid 110 kW de potencia",
+    "lugar":"Gualeguaychú",
+    "descripcion": "Sistema solar On-Grid de alta potencia instalado en una planta industrial de Gualeguaychú, diseñado para mejorar la eficiencia energética y reducir costos operativos.",
+    "textolargo1": "Instalación de un sistema solar On-Grid de 110 kW en el Parque Industrial de Gualeguaychú con el objetivo de reducir la dependencia de la red eléctrica.",
+    "textolargo2": "El sistema está conectado a la red, permitiendo consumir la energía generada y devolver el excedente.",
+    "textolargo3": "Cuenta con 180 paneles solares sobre techo y un inversor SMA FV On-Grid STP 110-60 Core 2 trifásico de 110.000 W con 12 MPPT, lo que garantiza una alta eficiencia y optimización del rendimiento. Esta instalación contribuye a la sostenibilidad y a la reducción de la huella de carbono.",
+    "image": "/imagenesnuevas/hermann/her2.jpg",
+    "images": ["/imagenesnuevas/hermann/her2.jpg"]
+  },
+  {
+    "id": 1,
+    "name":"Casa",
+    "titulo1": "Instalación Residencial",
+    "titulo2": "Sistema On-Grid 3,5kW de potencia",
+    "lugar":"Gualeguaychú",
+    "descripcion": "Sistema solar residencial con 8 paneles solares, ideal para reducir el consumo eléctrico del hogar y aprovechar la energía renovable.",
+    "textolargo1": "Proyecto residencial con instalación de 8 paneles solares para autoabastecimiento energético.",
+    "textolargo2": "El sistema cuenta con un inversor SMA que garantiza un rendimiento estable y seguro.",
+    "textolargo3": "Esta solución permite al hogar reducir significativamente su factura eléctrica y aportar al cuidado del medio ambiente.",
+
+    "image": "/imagenesnuevas/casa/1.jpeg",
+    "images": ["/imagenesnuevas/casa/1.jpeg", "/imagenesnuevas/casa/2.jpeg", "/imagenesnuevas/casa/3.jpeg"]
+  },
+{
+    "id": 2,
+    "name":"Colegio Las Victorias",
+    "titulo1": "Institución Educativa",
+    "titulo2": "Sistema On-Grid de 5kW de potencia",
+    "lugar":"Gualeguaychú",
+    "descripcion": "Instalación solar en un colegio que promueve el ahorro energético y la educación ambiental entre los estudiantes.",
+    "textolargo1": "Sistema On-Grid instalado en un establecimiento educativo con 8 paneles solares.",
+    "textolargo2": "El inversor SMA permite un rendimiento óptimo y seguro en la generación eléctrica.",
+    "textolargo3": "Este proyecto no solo genera ahorro económico, sino que también actúa como herramienta educativa para fomentar la conciencia sobre energías renovables.",
+    "image":  "/imagenesnuevas/lasvictorias/1.jpg",
+    "images": ["/imagenesnuevas/lasvictorias/1.jpg", "/imagenesnuevas/lasvictorias/2.jpg", "/imagenesnuevas/lasvictorias/3.jpg", "/imagenesnuevas/lasvictorias/4.jpg", "/imagenesnuevas/lasvictorias/5.jpg", "/imagenesnuevas/lasvictorias/6.jpg", "/imagenesnuevas/lasvictorias/7.jpg", "/imagenesnuevas/lasvictorias/8.jpg"]
+  },
+  {
+    "id": 3,
+    "name":"Agropecuaria Sur",
+    "titulo1": "Instalación Comercial",
+    "titulo2": "Sistema Híbrido 20kW de potencia",
+    "lugar":"Gualeguaychú",
+    "descripcion": "Instalación compuesta por 40 paneles solares de 550W dispuestos sobre estructuras coplanares, combinando funcionalidad y estética para una integración armoniosa con el entorno. El sistema cuenta con dos inversores híbridos Deye All In One HV de 10kVA, acompañados de baterías de 12,3 kWh cada una, alcanzando una potencia total de 20 kW. Esta solución garantiza eficiencia, respaldo energético y mayor independencia de la red eléctrica, ideal para entornos residenciales o comerciales que buscan sostenibilidad y seguridad energética.",
+    "textolargo1": "Proyecto residencial con instalación de 8 paneles solares para autoabastecimiento energético.",
+    "textolargo2": "El sistema cuenta con un inversor SMA que garantiza un rendimiento estable y seguro.",
+    "textolargo3": "Esta solución permite al hogar reducir significativamente su factura eléctrica y aportar al cuidado del medio ambiente.",
+    "image": "/imagenesnuevas/agropecuaria/agro1..jpg",
+    "images": ["/imagenesnuevas/agropecuaria/agro1..jpg", "/imagenesnuevas/agropecuaria/agro2..jpg"]
+  },
+  {
+    "id": 4,
+    "name":"La Morena",
+    "titulo1": "Instalación Industrial",
+    "titulo2": "Sistema On-Grid 110 kW de potencia",
+    "lugar":"Gualeguaychú",
+    "descripcion": "Sistema solar On-Grid de alta potencia instalado en una planta industrial de Gualeguaychú, diseñado para mejorar la eficiencia energética y reducir costos operativos.",
+    "textolargo1": "Instalación de un sistema solar On-Grid de 110 kW en el Parque Industrial de Gualeguaychú con el objetivo de reducir la dependencia de la red eléctrica.",
+    "textolargo2": "El sistema está conectado a la red, permitiendo consumir la energía generada y devolver el excedente.",
+    "textolargo3": "Cuenta con 180 paneles solares sobre techo y un inversor SMA FV On-Grid STP 110-60 Core 2 trifásico de 110.000 W con 12 MPPT, lo que garantiza una alta eficiencia y optimización del rendimiento. Esta instalación contribuye a la sostenibilidad y a la reducción de la huella de carbono.",
+    "image": "/imagenesnuevas/morena2/1.jpeg",
+    "images": ["/imagenesnuevas/morena2/1.jpeg", "/imagenesnuevas/morena2/2.jpeg", "/imagenesnuevas/morena2/3.jpeg"]
+  },
+
+  {
+    "id": 5,
+    "name":"Campo",
+    "titulo1": "Bombeo Solar",
+    "titulo2": "Bomba Handuro Centrífuga 1500W",
+    "lugar":"Larroque",
+    "descripcion": "Sistema solar On-Grid de alta potencia instalado en una planta industrial de Gualeguaychú, diseñado para mejorar la eficiencia energética y reducir costos operativos.",
+    "textolargo1": "Instalación de un sistema solar On-Grid de 110 kW en el Parque Industrial de Gualeguaychú con el objetivo de reducir la dependencia de la red eléctrica.",
+    "textolargo2": "El sistema está conectado a la red, permitiendo consumir la energía generada y devolver el excedente.",
+    "textolargo3": "Cuenta con 180 paneles solares sobre techo y un inversor SMA FV On-Grid STP 110-60 Core 2 trifásico de 110.000 W con 12 MPPT, lo que garantiza una alta eficiencia y optimización del rendimiento. Esta instalación contribuye a la sostenibilidad y a la reducción de la huella de carbono.",
+    "image": "/imagenesnuevas/campo/campo3.jpg",
+    "images": ["/imagenesnuevas/campo/campo3.jpg", "/imagenesnuevas/campo/4.jpg", "/imagenesnuevas/campo/5.jpg", "/imagenesnuevas/campo/6.jpg"]
+  }
+
+
+]
+ 

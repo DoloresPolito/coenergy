@@ -4,7 +4,7 @@ import campo from "../../../public/images/services/campo1.png";
 import hogar from "../../../public/images/services/casas1.png";
 import industria from "../../../public/images/services/industria1.png";
 import styles from "./styles.module.scss";
-import AnimatedDiv from "@/app/components/AnimatedDiv";
+import AnimatedDiv from "@/components/AnimatedDiv";
 
 export default function Services() {
   const items = [

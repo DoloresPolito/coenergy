@@ -1,7 +1,7 @@
 "use client";
 import styles from "./styles.module.scss";
 
-import AnimatedDiv from "@/app/components/AnimatedDiv";
+import AnimatedDiv from "@/components/AnimatedDiv";
 import Image from "next/image";
 import asesoria from "../../../public/icons/asesoramiento..png";
 import ingenieria from "../../../public/icons/ingenieria.png";

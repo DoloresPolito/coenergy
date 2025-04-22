@@ -7,7 +7,8 @@ import Description from "@/structure/Description";
 import Section from "@/structure/Section";
 import AboutAsesoramiento from "@/about/AboutAsesoramiento";
 import AboutProcess from "@/about/AboutProcess";
-
+import { motion } from "framer-motion"; 
+import BackgroundAbout from "../../../public/images/ases.jpg";
 export default function About() {
   useEffect(() => {
     const lenis = new Lenis();
@@ -22,12 +23,16 @@ export default function About() {
   }, []);
 
   return (
-    <div className={styles.page}>
+    <motion.div className={styles.page}
+    initial={{ opacity: 0 }} // Iniciar con opacidad 0
+    animate={{ opacity: 1 }} // Animar a opacidad 1
+    transition={{ duration: 2 }} // Duración de la animación
+    >
       <Intro />
       <Description />
       <AboutAsesoramiento />
-      <Section />
+      <Section imagepath={BackgroundAbout}/>
       <AboutProcess/>
-    </div>
+    </motion.div>
   );
 }
