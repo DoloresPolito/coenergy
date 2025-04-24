@@ -1,17 +1,19 @@
 
-  [ {
-    "id": 0,
-    "name":"Hermann",
-    "titulo1": "Instalación Industrial",
-    "titulo2": "Sistema On-Grid 110 kW de potencia",
-    "lugar":"Gualeguaychú",
-    "descripcion": "Sistema solar On-Grid de alta potencia instalado en una planta industrial de Gualeguaychú, diseñado para mejorar la eficiencia energética y reducir costos operativos.",
-    "textolargo1": "Instalación de un sistema solar On-Grid de 110 kW en el Parque Industrial de Gualeguaychú con el objetivo de reducir la dependencia de la red eléctrica.",
-    "textolargo2": "El sistema está conectado a la red, permitiendo consumir la energía generada y devolver el excedente.",
-    "textolargo3": "Cuenta con 180 paneles solares sobre techo y un inversor SMA FV On-Grid STP 110-60 Core 2 trifásico de 110.000 W con 12 MPPT, lo que garantiza una alta eficiencia y optimización del rendimiento. Esta instalación contribuye a la sostenibilidad y a la reducción de la huella de carbono.",
-    "image": "/imagenesnuevas/hermann/her2.jpg",
-    "images": ["/imagenesnuevas/hermann/her2.jpg"]
-  },
+  [
+
+    {
+      "id": 0,
+      "name":"Frigorífico La Morena",
+      "titulo1": "Instalación Industrial",
+      "titulo2": "Sistema On-Grid 28,7 kW de potencia",
+      "lugar":"Gualeguaychú",
+      "descripcion": "Instalación de sistema solar On-Grid de 28,7 kW en frigorífico de Gualeguaychú",
+      "textolargo1": "Se llevó a cabo la instalación de un sistema solar fotovoltaico On-Grid de 28,7 kW en un frigorífico ubicado en Gualeguaychú, con el objetivo de reducir el consumo de energía proveniente de la red eléctrica.",
+      "textolargo2": "El sistema está compuesto por 87 paneles solares instalados sobre techo y un inversor trifásico SMA STP 25000TL-30, que permite optimizar la producción de energía y mejorar la eficiencia del sistema.",
+      "textolargo3": "Este sistema está diseñado para autoconsumo, por lo que la energía generada se utiliza en tiempo real dentro del frigorífico, sin inyectar excedente a la red. De esta manera, se logra un importante ahorro energético y una contribución significativa a la sostenibilidad ambiental.",
+      "image": "/imagenesnuevas/morena2/1.jpeg",
+      "images": ["/imagenesnuevas/morena2/1.jpeg", "/imagenesnuevas/morena2/2.jpeg", "/imagenesnuevas/morena2/3.jpeg"]
+    },
   {
     "id": 1,
     "name":"Casa",
@@ -52,22 +54,10 @@
     "image": "/imagenesnuevas/agropecuaria/agro1..jpg",
     "images": ["/imagenesnuevas/agropecuaria/agro1..jpg", "/imagenesnuevas/agropecuaria/agro2..jpg"]
   },
-  {
-    "id": 4,
-    "name":"Frigorífico La Morena",
-    "titulo1": "Instalación Industrial",
-    "titulo2": "Sistema On-Grid 28,7 kW de potencia",
-    "lugar":"Gualeguaychú",
-    "descripcion": "Instalación de sistema solar On-Grid de 28,7 kW en frigorífico de Gualeguaychú",
-    "textolargo1": "Se llevó a cabo la instalación de un sistema solar fotovoltaico On-Grid de 28,7 kW en un frigorífico ubicado en Gualeguaychú, con el objetivo de reducir el consumo de energía proveniente de la red eléctrica.",
-    "textolargo2": "El sistema está compuesto por 87 paneles solares instalados sobre techo y un inversor trifásico SMA STP 25000TL-30, que permite optimizar la producción de energía y mejorar la eficiencia del sistema.",
-    "textolargo3": "Este sistema está diseñado para autoconsumo, por lo que la energía generada se utiliza en tiempo real dentro del frigorífico, sin inyectar excedente a la red. De esta manera, se logra un importante ahorro energético y una contribución significativa a la sostenibilidad ambiental.",
-    "image": "/imagenesnuevas/morena2/1.jpeg",
-    "images": ["/imagenesnuevas/morena2/1.jpeg", "/imagenesnuevas/morena2/2.jpeg", "/imagenesnuevas/morena2/3.jpeg"]
-  },
+  
 
   {
-    "id": 5,
+    "id": 4,
     "name":"Campo",
     "titulo1": "Bombeo Solar",
     "titulo2": "Bomba Handuro Centrífuga 1500W",
@@ -78,6 +68,19 @@
     "textolargo3": "",
     "image": "/imagenesnuevas/campo/campo3.jpg",
     "images": ["/imagenesnuevas/campo/campo3.jpg", "/imagenesnuevas/campo/4.jpg", "/imagenesnuevas/campo/5.jpg", "/imagenesnuevas/campo/6.jpg"]
+  },
+  {
+    "id": 5,
+    "name":"Hermann",
+    "titulo1": "Instalación Industrial",
+    "titulo2": "Sistema On-Grid 110 kW de potencia",
+    "lugar":"Gualeguaychú",
+    "descripcion": "Sistema solar On-Grid de alta potencia instalado en una planta industrial de Gualeguaychú, diseñado para mejorar la eficiencia energética y reducir costos operativos.",
+    "textolargo1": "Instalación de un sistema solar On-Grid de 110 kW en el Parque Industrial de Gualeguaychú con el objetivo de reducir la dependencia de la red eléctrica.",
+    "textolargo2": "El sistema está conectado a la red, permitiendo consumir la energía generada y devolver el excedente.",
+    "textolargo3": "Cuenta con 180 paneles solares sobre techo y un inversor SMA FV On-Grid STP 110-60 Core 2 trifásico de 110.000 W con 12 MPPT, lo que garantiza una alta eficiencia y optimización del rendimiento. Esta instalación contribuye a la sostenibilidad y a la reducción de la huella de carbono.",
+    "image": "/imagenesnuevas/hermann/her2.jpg",
+    "images": ["/imagenesnuevas/hermann/her2.jpg"]
   }
 
 

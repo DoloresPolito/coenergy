@@ -5,56 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import projects from "../../../src/projects.json";
 
-// const projects = [
-//   {
-//     id: 1,
-//     image: "/imagenesnuevas/casa/1.jpeg",
-//     title: "Proyecto Solar Residencial",
-//     subtitle: "Sistema On-Grid 5 kW",
-//     description:
-//       "Instalación residencial que permite reducir costos de energía y aportar al medio ambiente.",
-//   },
-//   {
-//     id: 2,
-//     image: "/imagenesnuevas/morena2/1.jpeg",
-//     title: "Proyecto Comercial",
-//     subtitle: "Sistema 10 kW",
-//     description:
-//       "Sistema solar instalado en un local comercial para eficiencia energética.",
-//   },
-//   {
-//     id: 3,
-//     image: "/imagenesnuevas/campo/campo1.png",
-//     title: "Campo Off-Grid",
-//     subtitle: "Energía Autónoma",
-//     description:
-//       "Sistema independiente para zonas rurales sin acceso a la red eléctrica.",
-//   },
-//   {
-//     id: 4,
-//     image: "/imagenesnuevas/casa/1.jpeg",
-//     title: "Proyecto Solar Residencial",
-//     subtitle: "Sistema On-Grid 5 kW",
-//     description:
-//       "Instalación residencial que permite reducir costos de energía y aportar al medio ambiente.",
-//   },
-//   {
-//     id: 5,
-//     image: "/imagenesnuevas/morena2/1.jpeg",
-//     title: "Proyecto Comercial",
-//     subtitle: "Sistema 10 kW",
-//     description:
-//       "Sistema solar instalado en un local comercial para eficiencia energética.",
-//   },
-//   {
-//     id: 6,
-//     image: "/imagenesnuevas/campo/campo1.png",
-//     title: "Campo Off-Grid",
-//     subtitle: "Energía Autónoma",
-//     description:
-//       "Sistema independiente para zonas rurales sin acceso a la red eléctrica.",
-//   },
-// ];
+
 
 export default function Projects() {
   const [isHovered, setIsHovered] = useState(null);
