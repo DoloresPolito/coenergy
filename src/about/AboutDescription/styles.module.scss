@@ -64,6 +64,7 @@
         font-family: var(--font-inter), sans-serif;
         font-size: 2.5vh;
         font-weight: 300;
+        line-height: 130%;
       }
 
       .item1 {
@@ -73,7 +74,7 @@
         height: 50vh;
 
         background-color: #f4f4f4;
-        border-radius: 30px;
+
 
         padding: 5vh;
         color: #2d82ff;
@@ -93,9 +94,13 @@
         height: 50vh;
 
         background-color: #2d82ff;
-        border-radius: 30px;
+  
         padding: 5vh;
         color: white;
+
+        h5 {
+          color: white;
+        }
         @media (max-width: 850px) {
           width: 100%;
           height: auto;

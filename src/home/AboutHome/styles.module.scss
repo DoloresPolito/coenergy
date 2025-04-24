@@ -7,16 +7,62 @@
   justify-content: center;
   margin-bottom: 10vh;
 z-index: 1000;
+margin-top: 5vh;
+
+.buttonwrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.buttoncontainer {
+  display: flex;
+  height: auto;
+  border: 1px solid #2d82ff;
+  border-radius: 10px;
+  padding: 1.6vh 2vh;
+  align-items: center;
+  cursor: pointer;
+  justify-self: flex-start;
+  align-self: flex-start;
+margin-left: 5vh;
+
+
+
+  p {
+    color: #2d82ff;
+    font-family: var(--font-montserrat), sans-serif;
+    font-size: 2vh;
+  }
+
+  &:hover {
+    background-color: #2d82ff;
+
+    p {
+      color: white;
+    }
+  }
+
+  img {
+    height: 2vh;
+    width: auto;
+    margin-left: 2vh;
+  }
+}
 
   .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start; 
     justify-content: space-between;
     height: auto;
     width: 95%;
     margin-top: 7vh;
+    @media only screen and (max-width: 800px) {
 
+      flex-direction: column;
+    }
 
     .titlecontainer {
       h4 {
@@ -27,16 +73,53 @@ z-index: 1000;
         color: #2d82ff;
       }
 
+    
+    }
+
+    .left{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
+
+
       h6 {
         font-size: 4vh;
         max-width: 80vw;
         font-family: var(--font-inter), sans-serif;
         font-weight: 400;
         color:#686868;
-        @media only screen and (max-width: 850px) {
+        @media only screen and (max-width: 800px) {
           max-width: 100vw;
         }
       }
+
+      p{
+        margin: 0px;
+        color:#686868;
+        &:nth-of-type(1){
+          font-size: 4vh;
+          margin-bottom: 3vh;
+            gap: 8px;
+            line-height: 1.3;
+            span{
+                margin-right: 3px;
+            }
+            .mask{
+                position: relative;
+                overflow: hidden;
+                display: inline-flex;
+            }
+        }
+        &:nth-of-type(2){
+            font-size: 18px;
+            width: 80%;
+            font-weight: 300;
+        }
+    }
     }
 
     .numbercontainer {
@@ -44,21 +127,29 @@ z-index: 1000;
       flex-direction: row;
       width: 100%;
       height: auto;
-      justify-content: space-between;
-      margin-top: 3vh;
-      margin-bottom: 3vh;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 8vh;
+      margin-bottom: 6vh;
+ 
+   
+     
+      // align-self: flex-end;
   
 
-      @media only screen and (max-width: 680px) {
+      @media only screen and (max-width: 800px) {
         flex-direction: column;
         margin-top: 4vh;
         margin-bottom: 4vh;
+        justify-content: flex-start;
+        align-items: flex-start;
+
 
       }
 
       .item {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: auto;
         height: auto;
         align-items: flex-end;
@@ -70,20 +161,15 @@ z-index: 1000;
         h3 {
           color: #3b89ff;
           font-family: var(--font-inter), sans-serif;
-          font-size: 22vh;
+          font-size: 12vh;
           font-weight: 400;
-          // @media only screen and (max-width: 850px) {
-          //   font-size: 20vh;
-          // }
-
-          @media only screen and (max-width: 880px) {
-            font-size: 18vh;}
+      
         }
 
         h5 {
           color: #a1a1a1;
           font-family: var(--font-inter), sans-serif;
-          font-size: 2.5vh;
+          font-size: 2vh;
           font-weight: 300;
           margin-bottom: 5vh;
           @media only screen and (max-width: 1050px) {
@@ -98,34 +184,6 @@ z-index: 1000;
       }
     }
 
-    .buttoncontainer {
-      display: flex;
-      height: auto;
-      border: 1px solid #2d82ff;
-      border-radius: 10px;
-      padding: 1.6vh 2vh;
-      align-items: center;
-      cursor: pointer;
-
-      p {
-        color: #2d82ff;
-        font-family: var(--font-montserrat), sans-serif;
-        font-size: 2vh;
-      }
-
-      &:hover {
-        background-color: #2d82ff;
-
-        p {
-          color: white;
-        }
-      }
-
-      img {
-        height: 2vh;
-        width: auto;
-        margin-left: 2vh;
-      }
-    }
+   
   }
 }

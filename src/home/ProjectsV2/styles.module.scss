@@ -7,13 +7,14 @@
   margin-top: 10vh;
   width: 95%;
   margin: 0 auto;
+  margin-bottom: 10vh;
   h4 {
     font-size: 2.2vh;
     font-family: var(--font-montserrat), sans-serif;
     font-weight: 500;
     color: #2d82ff;
     text-transform: uppercase;
-    margin-bottom: 5vh;
+    margin-bottom: 0vh;
 
     // @media only screen and (max-width: 750px) {
     //   max-width: 65%;
@@ -32,7 +33,7 @@
     gap: 1%;
     margin-top: 7vh;
     flex-wrap: nowrap;
-
+margin-bottom: 5vh;
 
     @media screen and (max-width: 1000px) and (min-width: 800px) {
       gap: 2%; // Ajusta el espacio entre los elementos si es necesario

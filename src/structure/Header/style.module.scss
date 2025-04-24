@@ -4,12 +4,17 @@
   display: flex;
   z-index: 1;
   top: 0;
-  height: 13.5vh;
+  height: 10vh;
   justify-content: space-between;
-  width: 100%;
+  width: 98%;
   font-weight: 300;
   align-items: center;
   z-index: 10000;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2vh;
+  border-radius: 2vh;
+
   // background-color: rgba(138, 137, 137, 0.5);
 
   @media (max-width: 800px) {
@@ -28,22 +33,17 @@
       display: flex;
       cursor: pointer;
       margin-top: 0.8vh;
+ 
 
       img {
         height: 6.5vh;
         width: auto;
 
-        @media (max-width: 800px) {
-          height: 2.5vh;
-          margin-top: 1.5vh;
-          margin-left: 1vh;
+        @media (max-width: 600px) {
+          height:5vh;
+ 
         }
 
-        @media (max-width: 475px) {
-          height: 2vh;
-          margin-top: 1.6vh;
-          margin-left: 1vh;
-        }
 
        
       }

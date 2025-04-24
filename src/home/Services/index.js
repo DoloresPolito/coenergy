@@ -5,6 +5,9 @@ import hogar from "../../../public/images/services/casas1.png";
 import industria from "../../../public/images/services/industria1.png";
 import styles from "./styles.module.scss";
 import AnimatedDiv from "@/components/AnimatedDiv";
+import { useInView, motion } from "framer-motion";
+import { useRef } from "react";
+import { slideUp } from "../../home/AboutHome/animation";
 
 export default function Services() {
   const items = [
@@ -32,16 +35,38 @@ export default function Services() {
     },
   ];
 
+  const phrase =
+  "Soluciones solares para todas las necesidades";
+const description = useRef(null);
+const isInView = useInView(description);
+
   return (
-    <div className={styles.section}>
+    <div className={styles.section} ref={description}>
       <div className={styles.container}>
         <div className={styles.top}>
           <h4>SERVICIOS</h4>
-          <AnimatedDiv>
+          {/* <AnimatedDiv>
 
      
           <h6>Soluciones solares para todas las necesidades</h6>
-          </AnimatedDiv>
+          </AnimatedDiv> */}
+
+          <p>
+              {phrase.split(" ").map((word, index) => {
+                return (
+                  <span key={index} className={styles.mask}>
+                    <motion.span
+                      variants={slideUp}
+                      custom={index}
+                      animate={isInView ? "open" : "closed"}
+                      key={index}
+                    >
+                      {word}
+                    </motion.span>
+                  </span>
+                );
+              })}
+            </p>
         </div>
 
         <div className={styles.bottom}>
@@ -56,7 +81,7 @@ export default function Services() {
                   className={styles.logo}
                 />
                 <h3>{item.name}</h3>
-                <p>{item.descripcion}</p>
+                <p className={styles.text}>{item.descripcion}</p>
               </div>
               <Image
                 src={item.image}

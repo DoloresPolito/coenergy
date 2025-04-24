@@ -7,7 +7,7 @@ import StyledLink from "../../../components/StyledLink";
 
 import ContactColumnInfo from "@/components/ContactColumnInfo";
 
-export default function Mask() {
+export default function Mask({ onClose }) {
 
 
   const pathname = usePathname();
@@ -49,7 +49,9 @@ export default function Mask() {
               className={styles.link}
             >
               <StyledLink link="/">
-                <p  className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>Inicio</p>
+                <p  
+                    onClick={onClose}
+                className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>Inicio</p>
               </StyledLink>
             </motion.div>
             <motion.div
@@ -60,7 +62,9 @@ export default function Mask() {
               className={styles.link}
             >
               <StyledLink link="/nosotros">
-                <p className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>Sobre Nosotros</p>
+                <p 
+                    onClick={onClose}
+                className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>Sobre Nosotros</p>
               </StyledLink>
             </motion.div>
             <motion.div
@@ -71,7 +75,9 @@ export default function Mask() {
               className={styles.link}
             >
               <StyledLink link="https://www.coenergy.ar/" target="_blank">
-                <p className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>Tienda Online</p>
+                <p 
+                    onClick={onClose}
+                className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>Tienda Online</p>
               </StyledLink>
             </motion.div>
             <motion.div
@@ -82,7 +88,9 @@ export default function Mask() {
               className={styles.link}
             >
               <StyledLink link="/proyectos">
-                <p className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>Proyectos</p>
+                <p 
+                    onClick={onClose}
+                className={`typography-Ag-Camino-Final-H2 ${styles.text}`}>Proyectos</p>
               </StyledLink>
             </motion.div>
 

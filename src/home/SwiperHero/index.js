@@ -128,8 +128,12 @@ const Slide = ({ slide }) => {
           <div className={styles.text} data-swiper-parallax="-100">
             <p>{slide.text}</p>
           </div> */}
+          <p className={styles.text}>Soluciones Renovables</p>
+          <h5 >RESIDENCIAL / COMERCIAL / INDUSTRIAL / CAMPO</h5>
 
-          <RoundedButton
+        
+        </div>
+        <RoundedButton
             text="Ver proyectos"
             color="#fdfdf1"
             background="transparent"
@@ -138,7 +142,6 @@ const Slide = ({ slide }) => {
             hoverC="#39442b"
             link="/proyectos"
           />
-        </div>
       </div>
     </div>
   );

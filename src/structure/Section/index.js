@@ -20,9 +20,9 @@ export default function Section({imagepath}) {
     <div ref={container} className={styles.section}>
       <div className={styles.content}>
         <AnimatedDiv>
-          <p className={styles.firsttext}>
+          {/* <p className={styles.firsttext}>
             La energía del futuro, en tus manos hoy.
-          </p>
+          </p> */}
         </AnimatedDiv>
       </div>
       <div className={styles.background}>

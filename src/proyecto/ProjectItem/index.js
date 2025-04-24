@@ -41,6 +41,7 @@ const ProjectItem = () => {
               </div>
             </div>
           </div>
+          <p>{proyecto.descripcion}</p>
         </div>
 
         {/* <Section imagepath={image1}/> */}

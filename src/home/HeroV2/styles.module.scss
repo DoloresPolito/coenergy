@@ -8,6 +8,7 @@
   overflow: hidden;
   position: relative; // margin-top: 10vh;
   z-index: 10;
+
   @media (max-width: 500px) {
     height: 130vh;
   }
@@ -36,9 +37,8 @@
     justify-content: center;
     position: relative;
 
-
     @media (max-width: 500px) {
-      background-color: #e3e3e0;
+      background-color: white;
       height: 130vh;
     }
 

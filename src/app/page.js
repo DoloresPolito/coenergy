@@ -16,6 +16,7 @@ import Faqs from "@/home/Faqs";
 import ProjectsV2 from "@/home/ProjectsV2";
 import BackgroundAbout from "../../public/images/ases.jpg";
 import BackgroundHome from "../../public/images/e.png";
+import AboutProcess from "@/about/AboutProcess";
 export default function Home() {
   useEffect(() => {
     const lenis = new Lenis();
@@ -41,12 +42,13 @@ export default function Home() {
   
       <ProjectsV2 />
  
-
+      <AboutProcess/>
       <WorkProgressV2 />
       {/* <Faqs/> */}
       {/* <Projects /> */}
 
-      <Services />
+      {/* <Services /> */}
+
       <LogosMoving />
       <Section imagepath={BackgroundHome} />
       {/* <Products /> */}

@@ -48,7 +48,7 @@
   .mySwiper {
     display: flex;
     flex-direction: row;
-    background-color: red;
+ 
     .swiper-pagination-bullet {
       background-color: white !important; // Cambia el color de los puntos a blanco
       opacity: 0.6 !important; // Ajusta la opacidad si lo deseas
@@ -64,7 +64,7 @@
     font-size: 18px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: blue;
+   
   }
   
   .slide {
@@ -72,7 +72,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    background-color: red;
+
   
     @media only screen and (max-width: 750px) {
       flex-direction: column;

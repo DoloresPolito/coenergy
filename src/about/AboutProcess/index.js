@@ -7,17 +7,45 @@ import asesoria from "../../../public/icons/asesoramiento..png";
 import ingenieria from "../../../public/icons/ingenieria.png";
 import provision from "../../../public/icons/ingenieria.png";
 import instalacion from "../../../public/icons/instalacion.png";
+import { useInView, motion } from "framer-motion";
+import { useRef } from "react";
+import { slideUp } from "../../home/AboutHome/animation";
 
 export default function AboutProcess() {
+
+
+  const phrase =
+  "Soluciones diseñadas para maximizar tu ahorro energético";
+const description = useRef(null);
+const isInView = useInView(description);
+
+
   return (
     <>
-      <div className={styles.section}>
+      <div className={styles.section} ref={description}>
         <div className={styles.container}>
           <div className={styles.titlecontainer}>
             <h4>CÓMO TRABAJAMOS</h4>
-            <AnimatedDiv>
+            {/* <AnimatedDiv>
               <h6>Soluciones diseñadas para maximizar tu ahorro energético</h6>
-            </AnimatedDiv>
+            </AnimatedDiv> */}
+
+<p>
+              {phrase.split(" ").map((word, index) => {
+                return (
+                  <span key={index} className={styles.mask}>
+                    <motion.span
+                      variants={slideUp}
+                      custom={index}
+                      animate={isInView ? "open" : "closed"}
+                      key={index}
+                    >
+                      {word}
+                    </motion.span>
+                  </span>
+                );
+              })}
+            </p>
           </div>
 
           <div className={styles.itemscontainer}>

@@ -6,43 +6,69 @@ import Image from "next/image";
 import blue from "../../../public/icons/blue.png";
 import white from "../../../public/icons/white.png";
 import Link from "next/link";
-import Portada from "@/components/Portada";
-
+import { useInView, motion } from "framer-motion";
+import { useRef } from "react";
+import { slideUp } from "./animation";
 export default function AboutHome() {
   const [isHovered, setIsHovered] = useState(false);
+
+  const phrase =
+    "Innovamos y creamos soluciones energéticas inteligentes cuidando el medioambiente en busca de la mejor experiencia para nuestros clientes.";
+  const description = useRef(null);
+  const isInView = useInView(description);
+
   return (
     <>
-   
-      <div className={styles.section}>
+      <div className={styles.section} ref={description}>
         <div className={styles.container}>
           <div className={styles.titlecontainer}>
             <h4>SOBRE NOSOTROS</h4>
-            <AnimatedDiv>
+          </div>
+          <div className={styles.left}>
+            {/* <AnimatedDiv>
               <h6>
                 Innovamos y creamos soluciones energéticas inteligentes cuidando
                 el medioambiente en busca de la mejor experiencia para nuestros
                 clientes.
               </h6>
-            </AnimatedDiv>
+
+    
+            </AnimatedDiv> */}
+            <p>
+              {phrase.split(" ").map((word, index) => {
+                return (
+                  <span key={index} className={styles.mask}>
+                    <motion.span
+                      variants={slideUp}
+                      custom={index}
+                      animate={isInView ? "open" : "closed"}
+                      key={index}
+                    >
+                      {word}
+                    </motion.span>
+                  </span>
+                );
+              })}
+            </p>
+            <div className={styles.numbercontainer}>
+              <div className={styles.item}>
+                <h3>7</h3>
+                <h5>años de trabajo</h5>
+              </div>
+
+              <div className={styles.item}>
+                <h3>+105</h3>
+                <h5>asesoramientos</h5>
+              </div>
+
+              <div className={styles.item}>
+                <h3>500</h3>
+                <h5>instalaciones</h5>
+              </div>
+            </div>
           </div>
-
-          <div className={styles.numbercontainer}>
-            <div className={styles.item}>
-              <h3>7</h3>
-              <h5>años de trabajo</h5>
-            </div>
-
-            <div className={styles.item}>
-              <h3>+105</h3>
-              <h5>asesoramientos</h5>
-            </div>
-
-            <div className={styles.item}>
-              <h3>500</h3>
-              <h5>instalaciones</h5>
-            </div>
-          </div>
-
+        </div>
+        <div className={styles.buttonwrapper}>
           <Link href="/nosotros">
             <div
               className={styles.buttoncontainer}
@@ -58,33 +84,7 @@ export default function AboutHome() {
             </div>
           </Link>
         </div>
-
       </div>
-
     </>
   );
-}
-
-{
-  /* <div className={styles.right}>
-            <AnimatedDiv>
-              <p className={styles.p1}>
-                Desde Gualeguaychú, Entre Ríos, Argentina, hemos creado COENERGY
-                SA con el firme propósito de proveer todas las soluciones
-                posibles a clientes que estén tras objetivos como el ahorro y el
-                cuidado del medio ambiente.
-              </p>
-              </AnimatedDiv>
-
-              <p className={styles.p2}>
-                A partir de valores tales como la conservación de los recursos
-                naturales, es que hemos replicado nuestro modelo de negocios en
-                otras cuatros provincias de nuestro país. Con presencia en Santa
-                Fe, Buenos Aires, Neuquén y Córdoba, forjamos el futuro con las
-                mejores tecnologías amigables con el medio ambiente.Nuestro
-                objetivo principal es ser líderes en la provisión de soluciones
-                en energías renovables buscando la mejor experiencia para el
-                cliente.
-              </p>
-            </div> */
 }
