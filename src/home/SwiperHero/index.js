@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useRef, useLayoutEffect } from 'react';
+import { useRef, useLayoutEffect, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -16,6 +16,15 @@ import { slideUp } from './animation';
 import { motion } from 'framer-motion';
 
 export default function SwiperHero() {
+
+  const [showSlider, setShowSlider] = useState(true);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setShowSlider(window.innerWidth >= 800);
+    }
+  }, []);
+
   const slides = [
     {
       title: "INSTALACIONES EN INDUSTRIAS",
@@ -41,44 +50,89 @@ export default function SwiperHero() {
   let xPercent = 0;
   let direction = -1;
 
-  useLayoutEffect( () => {
+  // useLayoutEffect( () => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   gsap.to(slider.current, {
+  //     scrollTrigger: {
+  //       trigger: document.documentElement,
+  //       scrub: 0.25,
+  //       start: 0,
+  //       end: window.innerHeight,
+  //       onUpdate: e => direction = e.direction * -1
+  //     },
+  //     x: "-500px",
+  //   })
+  //   requestAnimationFrame(animate);
+  // }, [])
+
+  useLayoutEffect(() => {
+    if (typeof window === "undefined" || window.innerWidth < 800) return;
+  
+    if (!slider.current) return; // ⚠️ importante: evitar error si el ref no existe
+  
     gsap.registerPlugin(ScrollTrigger);
+  
     gsap.to(slider.current, {
       scrollTrigger: {
         trigger: document.documentElement,
         scrub: 0.25,
         start: 0,
         end: window.innerHeight,
-        onUpdate: e => direction = e.direction * -1
+        onUpdate: (e) => (direction = e.direction * -1),
       },
       x: "-500px",
-    })
+    });
+  
     requestAnimationFrame(animate);
-  }, [])
+  }, []);
+
+  // const animate = () => {
+  //   if(xPercent < -100){
+  //     xPercent = 0;
+  //   }
+  //   else if(xPercent > 0){
+  //     xPercent = -100;
+  //   }
+  //   gsap.set(firstText.current, {xPercent: xPercent})
+  //   gsap.set(secondText.current, {xPercent: xPercent})
+  //   requestAnimationFrame(animate);
+  //   xPercent += 0.08 * direction;
+  // }
 
   const animate = () => {
-    if(xPercent < -100){
+    if (!firstText.current || !secondText.current) return;
+  
+    if (xPercent < -100) {
       xPercent = 0;
-    }
-    else if(xPercent > 0){
+    } else if (xPercent > 0) {
       xPercent = -100;
     }
-    gsap.set(firstText.current, {xPercent: xPercent})
-    gsap.set(secondText.current, {xPercent: xPercent})
+  
+    gsap.set(firstText.current, { xPercent: xPercent });
+    gsap.set(secondText.current, { xPercent: xPercent });
     requestAnimationFrame(animate);
     xPercent += 0.08 * direction;
-  }
+  };
 
   return (
     <div className={styles.container}>
       <div className={styles.carouselcontainer}>
 
-      <div className={styles.sliderContainer}>
+      {/* <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>La energía del futuro en tus manos hoy •</p>
           <p ref={secondText}> La energía del futuro en tus manos hoy • </p>
         </div>
-      </div>
+      </div> */}
+
+      {showSlider && (
+          <div className={styles.sliderContainer}>
+            <div ref={slider} className={styles.slider}>
+              <p ref={firstText}>La energía del futuro en tus manos hoy •</p>
+              <p ref={secondText}> La energía del futuro en tus manos hoy • </p>
+            </div>
+          </div>
+        )}
 
         <div className={styles.carouselcontent}>
           <Swiper

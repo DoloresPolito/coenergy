@@ -18,16 +18,33 @@ import BackgroundAbout from "../../public/images/ases.jpg";
 import BackgroundHome from "../../public/images/e.png";
 import AboutProcess from "@/about/AboutProcess";
 export default function Home() {
-  useEffect(() => {
-    const lenis = new Lenis();
+  // useEffect(() => {
+  //   const lenis = new Lenis();
 
-    function raf(time) {
-      lenis.raf(time);
+  //   function raf(time) {
+  //     lenis.raf(time);
+
+  //     requestAnimationFrame(raf);
+  //   }
+
+  //   requestAnimationFrame(raf);
+  // }, []);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.innerWidth >= 800) {
+      const lenis = new Lenis();
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
 
       requestAnimationFrame(raf);
-    }
 
-    requestAnimationFrame(raf);
+      return () => {
+        lenis.destroy(); // Limpieza al desmontar
+      };
+    }
   }, []);
 
   return (
