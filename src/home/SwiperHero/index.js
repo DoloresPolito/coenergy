@@ -132,6 +132,7 @@ const Slide = ({ slide }) => {
           width={1000}
           height={1000}
           alt="Instalaciones"
+          priority
         />
       </div>
 

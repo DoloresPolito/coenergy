@@ -44,6 +44,7 @@ export default function Projects() {
                   alt={project.titulo1}
                   fill
                   className={styles.image}
+                  priority
                 />
               </div>
               <div className={styles.info}>
