@@ -90,14 +90,14 @@ export default function SwiperHero() {
   return (
     <div className={styles.container}>
       <div className={styles.carouselcontainer}>
-        {showSlider && (
+        {/* {showSlider && (
           <div className={styles.sliderContainer}>
             <div ref={slider} className={styles.slider}>
               <p ref={firstText}>La energía del futuro en tus manos hoy •</p>
               <p ref={secondText}> La energía del futuro en tus manos hoy • </p>
             </div>
           </div>
-        )}
+        )} */}
 
         <div className={styles.carouselcontent}>
           <Swiper

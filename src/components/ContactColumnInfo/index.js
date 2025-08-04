@@ -20,10 +20,10 @@ export default function ContactColumnInfo() {
           <p className={`typography-Ag-camino-2-P  `}>
             WhatsApp:{" "}
             <Link
-              href="https://api.whatsapp.com/send/?phone=543446584076"
+              href="https://api.whatsapp.com/send/?phone=543446609146"
               target="_blank"
             >
-              +54 3446 584076
+              +54 3446 609146
             </Link>
           </p>
         </div>
